@@ -15,7 +15,8 @@ var myMenuItems = <String>[
 void onSelect(item) {
   switch (item) {
     case 'Home':
-      print('Home clicked');
+      // reboot the app if freezes?
+      print('Home clicked for ethscyc homepage');
       break;
     case 'Profile':
       print('Profile clicked');
@@ -36,6 +37,7 @@ void onSelect(item) {
   }
 }
 
+// implements PreferredSizeWidget?
 class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
@@ -44,7 +46,7 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
     // print(T);
     return AppBar(
         centerTitle: false,
-        title: Text("ethsync2022.04.05"),
+        title: Text("ethsync2022.04.06"),
         bottom: TabBar(tabs: [
           Tab(icon: Icon(Icons.home, color: Colors.redAccent)),
           Tab(icon: Icon(Icons.code, color: Colors.amberAccent)),
@@ -55,44 +57,57 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
         actions: <Widget>[
           // Icon(Icons.search),
           PopupMenuButton<String>(
-              //brger menu
-              icon: Icon(Icons.more_horiz_outlined), //verticle menu
-              onSelected: onSelect,
-              itemBuilder: (BuildContext context) {
-                return myMenuItems.map((String choice) {
-                  return PopupMenuItem<String>(
-                    child: Text(choice),
-                    value: choice,
-                  );
-                }).toList();
-              }),
-          PopupMenuItem(
-            child: const Icon(Icons.home, color: Colors.redAccent),
-            // onTap: (),
+            //brger menu
+            icon: Icon(Icons.lunch_dining), //verticle menu
+            onSelected: onSelect,
+            itemBuilder: (BuildContext context) => [
+              PopupMenuItem(
+                child: Text("Alpha"),
+                value: "Home",
+              ),
+              PopupMenuItem(
+                child: Text("beta"),
+                value: "Ethereum Website",
+              )
+            ],
           ),
         ]);
-    // build(context)
-    // PopupMenuButton<EthSyncAppBarEntries>(itemBuilder:
-    // (BuildContext context) => <PopupMenuEntry<EthSyncAppBarEntries>>
-    // [
-    //   PopupMenuItem<EthSyncAppBarEntries>(child: const Text('hello item')),
-    // // ],
-    // const PopupMenuDivider(),
-    // PopupMenuItem(
-    //   child: Icon(Icons.link, color: Colors.greenAccent),
-    // ),
-    // PopupMenuItem(
-    //   child: Icon(Icons.find_in_page, color: Colors.orange),
-    // ),
-    // PopupMenuItem(
-    //   child: const Icon(Icons.home, color: Colors.redAccent),
-    // ),
-    // PopupMenuItem(
-    //   child: const Text('ethereum website'),
-    //   //https://www.ethereum.org/
-    // ),
-    throw UnimplementedError();
   }
+// }
+  // );
+  // itemBuilder: (BuildContext context) {
+  //   return myMenuItems.map((String choice) {
+  //     return PopupMenuItem<String>(
+  //       child: Text(choice),
+  //       value: choice,
+  //     );
+  //   }).toList();
+  // })
+  // ],
+  //   )
+  // }
+  // build(context)
+  // PopupMenuButton<EthSyncAppBarEntries>(itemBuilder:
+  // (BuildContext context) => <PopupMenuEntry<EthSyncAppBarEntries>>
+  // [
+  //   PopupMenuItem<EthSyncAppBarEntries>(child: const Text('hello item')),
+  // // ],
+  // const PopupMenuDivider(),
+  // PopupMenuItem(
+  //   child: Icon(Icons.link, color: Colors.greenAccent),
+  // ),
+  // PopupMenuItem(
+  //   child: Icon(Icons.find_in_page, color: Colors.orange),
+  // ),
+  // PopupMenuItem(
+  //   child: const Icon(Icons.home, color: Colors.redAccent),
+  // ),
+  // PopupMenuItem(
+  //   child: const Text('ethereum website'),
+  //   //https://www.ethereum.org/
+  // ),
+  // throw UnimplementedError();
+  // }
 
   @override
   // TODO: implement preferredSize
