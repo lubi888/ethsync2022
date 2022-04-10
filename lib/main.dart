@@ -16,13 +16,13 @@ class ethSync extends StatelessWidget {
     // throw UnimplementedError();
     print("ethsync main loaded");
     return MaterialApp(
-      title: 'ethSync',
+      title: 'ethSync2022',
       home: DefaultTabController(
         length: 5,
         child: Scaffold(
             appBar: EthSyncAppBar(),
             // appBar: EthSyncAppBar(),
-            body: Center(
+            body: const Center(
               child: Text("hi"),
             )),
       ),

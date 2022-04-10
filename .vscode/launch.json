@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "ethsync22",
+            "name": "ethsync2022",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "ethsync22 (profile mode)",
+            "name": "ethsync2022 (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "ethsync22 (release mode)",
+            "name": "ethsync2022 (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
