@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 //local classes
 import './ethsync_appbar.dart';
+import './ethsync_home.dart';
 
 void main() {
   runApp(ethSync());
@@ -12,21 +13,17 @@ class ethSync extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    // throw UnimplementedError();
     print("ethsync main loaded");
     return MaterialApp(
-      title: 'ethSync2022',
-      home: DefaultTabController(
-        length: 5,
-        child: Scaffold(
+        title: 'ethSync2022',
+        home: DefaultTabController(
+          length: 5,
+          child: Scaffold(
             appBar: EthSyncAppBar(),
-            // appBar: EthSyncAppBar(),
-            body: const Center(
-              child: Text("hi"),
-            )),
-      ),
-    );
+            // drawer: EthSyncDrawer(),
+            body: EthSyncHome(),
+          ),
+        ));
   }
 }
 //   // This widget  is the root of your application.

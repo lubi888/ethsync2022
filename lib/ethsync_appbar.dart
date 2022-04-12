@@ -3,7 +3,7 @@ import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // import 'dart:html';
-const double kToolbarHeight = 80.0;
+const double kToolbarHeight = 100.0;
 
 var myMenuItems = <String>[
   'Home',
@@ -17,32 +17,20 @@ var myMenuItems = <String>[
 void onSelect(item) {
   switch (item) {
     case 'Home':
-      // reboot the app if freezes?
       print('Home clicked for ethscyc homepage');
-      // child:
-      // Linkify(
-      //     onOpen: (link) async {
-      //       if (await canLaunch(link.url)) {
-      //         await launch(link.url);
-      //       } else {
-      //         throw 'Could not launch $link';
-      //       }
-      //     },
-      //     // humanize: true,
-      //     text: 'https://www.ethSync.org');
       break;
-    case 'Profile':
-      print('Profile clicked');
-      break;
-    case 'Setting':
-      print('Playtime setting clicked');
-      break;
-    case 'Privacy':
-      print('Privacy cliked');
-      break;
-    case 'Contact':
-      print('Contact clicked');
-      break;
+    // case 'Profile':
+    //   print('Profile clicked');
+    //   break;
+    // case 'Setting':
+    //   print('Playtime setting clicked');
+    //   break;
+    // case 'Privacy':
+    //   print('Privacy cliked');
+    //   break;
+    // case 'Contact':
+    //   print('Contact clicked');
+    //   break;
     case 'Ethereum Website':
       print('this is where we connect to the net ethereum webite');
       //url launcher
@@ -61,11 +49,37 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
         centerTitle: false,
         title: Text("ethsync2022.04.10"),
         bottom: TabBar(tabs: [
-          Tab(icon: Icon(Icons.home, color: Colors.redAccent)),
-          Tab(icon: Icon(Icons.code, color: Colors.amberAccent)),
-          Tab(icon: Icon(Icons.laptop, color: Colors.greenAccent)),
-          Tab(icon: Icon(Icons.school, color: Colors.limeAccent)),
-          Tab(icon: Icon(Icons.dangerous, color: Colors.red[200])),
+          const Tab(
+              child: Align(
+                alignment: Alignment.center,
+                child: Text('home'),
+              ),
+              icon: Icon(Icons.home, color: Colors.redAccent)),
+          const Tab(
+            icon: Icon(Icons.code, color: Colors.amberAccent),
+            child: Align(
+              alignment: Alignment.center,
+              child: Text('code'),
+            ),
+          ),
+          const Tab(
+              child: Align(
+                alignment: Alignment.center,
+                child: Text('online presence'),
+              ),
+              icon: Icon(Icons.laptop, color: Colors.greenAccent)),
+          const Tab(
+              child: Align(
+                alignment: Alignment.center,
+                child: Text('learning more'),
+              ),
+              icon: Icon(Icons.school, color: Colors.limeAccent)),
+          Tab(
+              child: const Align(
+                alignment: Alignment.center,
+                child: Text('danger experimental software'),
+              ),
+              icon: Icon(Icons.dangerous, color: Colors.red[200])),
         ]),
         actions: <Widget>[
           // Icon(Icons.search),
@@ -74,7 +88,6 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
             onSelected: onSelect,
             itemBuilder: (BuildContext context) => [
               PopupMenuItem(
-                  // child: Text("Alpha"),
                   value: "Home",
                   child: Linkify(
                       onOpen: (link) async {
@@ -91,8 +104,6 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
                 value: "Ethereum Website",
               ),
               PopupMenuItem(
-                // child: const Text(
-                //     'ethereum reddit'), //https://www.reddit.com/r/ethereum/
                 child: Linkify(
                     onOpen: (link) async {
                       if (await canLaunch(link.url)) {
@@ -117,7 +128,7 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
                     // humanize: true,
                     text: 'https://ethereum.stackexchange.com/'),
               ),
-              PopupMenuDivider(),
+              const PopupMenuDivider(),
               PopupMenuItem(
                 child: Linkify(
                     onOpen: (link) async {
