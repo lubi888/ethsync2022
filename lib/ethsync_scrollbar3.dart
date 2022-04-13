@@ -3,6 +3,7 @@ import './ethsync_text.dart';
 
 class Scrollbar3 extends StatelessWidget {
   // const Scrollbar3({ Key? key }) : super(key: key);
+  final String _kAsset1 = 'assets/images/go-download-website.png';
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +42,13 @@ class Scrollbar3 extends StatelessWidget {
                 fontStyle: FontStyle.italic,
                 fontSize: 30.0,
               ),
+            ),
+          ),
+          Container(
+            child: Image.asset(
+              _kAsset1,
+              height: 100.0,
+              width: 100.0,
             ),
           )
         ],

@@ -47,7 +47,7 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
     // print(T);
     return AppBar(
         centerTitle: false,
-        title: const Text("ethsync2022.04.12"),
+        title: const Text("ethsync2022.04.13"),
         bottom: TabBar(tabs: [
           const Tab(
               child: Align(

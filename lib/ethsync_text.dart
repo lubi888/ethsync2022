@@ -2,10 +2,10 @@
 // import 'package:flutter_linkify/flutter_linkify.dart';
 
 // final String url_cry_malware = "https://coinpedia.org/news/firefox-upgrades-to-ban-crypto-mining-malware/";
-
+// \n\u{131C8} \n\tegyptian di 2
 const String ethTextFonts =
     "\u03BB \n\tgreek lambda \n\u1688 \n\togham tinne \n\u304B \n\tjapanese ka \n\u4E07 \n\tcjk ideograph 10,000"
-    "\n\u4DC1 \n\tiching \n\u1300 \n\tethiopic symbol \n\u{13080} \n\tegyptian eye";
+    "\n\u4DC1 \n\tiching \n\u1300 \n\tethiopic symbol \n\u{13080} \n\tegyptian eye \n\u{132BD} \n\tegyptian djed \n\u{1309E} \n\tegyptian di hand arm \n\u{133D9} \n\tegyptian di \n";
 
 const String ethTextIntro =
     "Hello and welcome to ethereum sync. This app aims to provide the information needed to "

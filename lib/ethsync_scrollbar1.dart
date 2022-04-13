@@ -5,9 +5,9 @@ class Scrollbar1 extends StatelessWidget {
   // const Scrollbar0({ Key? key }) : super(key: key);
   //   Locale myLocale = Localizations.localeOf(context);
   // print(myLocale.toString() + ' on Scrollbar2');
-  final String _kAsset2 = 'assets/go-download-website.png';
+  final String _kAsset2 = 'assets/images/go-download-website.png';
   // final String _kAsset3 = 'assets/footer-gopher.jpg';
-  final String _kAsset4 = 'assets/go-env.png';
+  final String _kAsset4 = 'assets/images/go-env.png';
 
   @override
   Widget build(BuildContext context) {
