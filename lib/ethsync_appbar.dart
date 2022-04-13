@@ -3,7 +3,7 @@ import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // import 'dart:html';
-const double kToolbarHeight = 100.0;
+const double kToolbarHeight = 120.0;
 
 var myMenuItems = <String>[
   'Home',
@@ -47,7 +47,7 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
     // print(T);
     return AppBar(
         centerTitle: false,
-        title: Text("ethsync2022.04.10"),
+        title: const Text("ethsync2022.04.12"),
         bottom: TabBar(tabs: [
           const Tab(
               child: Align(
@@ -56,35 +56,39 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
               icon: Icon(Icons.home, color: Colors.redAccent)),
           const Tab(
-            icon: Icon(Icons.code, color: Colors.amberAccent),
             child: Align(
               alignment: Alignment.center,
-              child: Text('code'),
+              child: Text('code '),
+              // install golang and geth
             ),
+            icon: Icon(Icons.code, color: Colors.amberAccent),
           ),
           const Tab(
               child: Align(
                 alignment: Alignment.center,
-                child: Text('online presence'),
+                child: Text('online'),
+                // presence
               ),
               icon: Icon(Icons.laptop, color: Colors.greenAccent)),
           const Tab(
               child: Align(
                 alignment: Alignment.center,
-                child: Text('learning more'),
+                child: Text('learn'),
+                // \ntechnical blockchain details
               ),
               icon: Icon(Icons.school, color: Colors.limeAccent)),
           Tab(
               child: const Align(
                 alignment: Alignment.center,
-                child: Text('danger experimental software'),
+                child: Text('dangr'),
+                //  \nexperimental software
               ),
               icon: Icon(Icons.dangerous, color: Colors.red[200])),
         ]),
         actions: <Widget>[
           // Icon(Icons.search),
           PopupMenuButton<String>(
-            icon: Icon(Icons.lunch_dining), //verticle menu
+            icon: const Icon(Icons.lunch_dining), //verticle menu
             onSelected: onSelect,
             itemBuilder: (BuildContext context) => [
               PopupMenuItem(
@@ -165,17 +169,17 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
                     },
                     text: 'https://en.wikipedia.org/wiki/Ethereum'),
               ),
-              PopupMenuItem(
+              const PopupMenuItem(
                 child: Icon(Icons.settings, color: Colors.redAccent),
               ),
-              PopupMenuItem(
-                child: const Text('Settings'),
+              const PopupMenuItem(
+                child: Text('Settings'),
               ),
-              PopupMenuItem(
-                child: const Text('French : Francais : FR'),
+              const PopupMenuItem(
+                child: Text('French : Francais : FR'),
               ),
-              PopupMenuItem(
-                child: const Text('German : Deutsch : DE'),
+              const PopupMenuItem(
+                child: Text('German : Deutsch : DE'),
               ),
               PopupMenuItem(
                 child: Linkify(

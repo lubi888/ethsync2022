@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import './ethsync_text.dart';
+import './ethsync_urllinks.dart';
 
+// import './ethsync_localizations.dart';
 class Scrollbar2 extends StatelessWidget {
   // const Scrollbar2({ Key? key }) : super(key: key);
 

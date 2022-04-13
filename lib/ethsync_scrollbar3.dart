@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './ethsync_text.dart';
 
 class Scrollbar3 extends StatelessWidget {
   // const Scrollbar3({ Key? key }) : super(key: key);
@@ -31,6 +32,17 @@ class Scrollbar3 extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
             ),
           ),
+          Container(
+            child: const Text(
+              ethTextFonts,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 30.0,
+              ),
+            ),
+          )
         ],
       ),
     );
