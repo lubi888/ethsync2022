@@ -1,3 +1,4 @@
+import 'package:ethsync2022/ethsync_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -46,19 +47,21 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
     print(TimeOfDay.now());
     // print(T);
     return AppBar(
-        centerTitle: false,
-        title: const Text("ethsync2022.04.13"),
+        centerTitle: true,
+        // centerTitle: false,
+        // title: const Text("ethsync2022.04.13"),
+        title: const Text(title),
         bottom: TabBar(tabs: [
           const Tab(
               child: Align(
                 alignment: Alignment.center,
-                child: Text('home'),
+                child: Text(home),
               ),
               icon: Icon(Icons.home, color: Colors.redAccent)),
           const Tab(
             child: Align(
               alignment: Alignment.center,
-              child: Text('code '),
+              child: Text(code),
               // install golang and geth
             ),
             icon: Icon(Icons.code, color: Colors.amberAccent),
@@ -66,21 +69,21 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
           const Tab(
               child: Align(
                 alignment: Alignment.center,
-                child: Text('online'),
+                child: Text(online),
                 // presence
               ),
               icon: Icon(Icons.laptop, color: Colors.greenAccent)),
           const Tab(
               child: Align(
                 alignment: Alignment.center,
-                child: Text('learn'),
+                child: Text(learn),
                 // \ntechnical blockchain details
               ),
               icon: Icon(Icons.school, color: Colors.limeAccent)),
           Tab(
               child: const Align(
                 alignment: Alignment.center,
-                child: Text('dangr'),
+                child: Text(danger),
                 //  \nexperimental software
               ),
               icon: Icon(Icons.dangerous, color: Colors.red[200])),
