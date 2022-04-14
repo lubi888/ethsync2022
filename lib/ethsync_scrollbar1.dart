@@ -1,76 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:async/async.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import './ethsync_text.dart';
+import './ethsync_urllinks.dart';
 
 class Scrollbar1 extends StatelessWidget {
   // const Scrollbar0({ Key? key }) : super(key: key);
   //   Locale myLocale = Localizations.localeOf(context);
   // print(myLocale.toString() + ' on Scrollbar2');
 
-  // final String _kAsset2 = 'assets/images/go-download-website.png';
-  // final String _kAsset3 = 'assets/footer-gopher.jpg';
-  // final String _kAsset4 = 'assets/images/go-env.png';
+  // final String _kAsset2 = 'assets/images/images/go-download-website.png';
+  // final String _kAsset3 = 'assets/images/footer-gopher.jpg';
+  // final String _kAsset4 = 'assets/images/images/go-env.png';
 
-  final String _kAsset2 = 'assets/go-download-website.png';
-  final String _kAsset3 = 'assets/footer-gopher.jpg';
-  final String _kAsset4 = 'assets/go-env.png';
-  final String _kAsset5 = 'assets/go-3-folders.png';
-  final String _kAsset6 = 'assets/go-hello.png';
-  final String _kAsset7 = 'assets/go-build-install.png';
-  final String _kAsset8 = 'assets/geth-web.png';
-  final String _kAsset9 = 'assets/gethdl-os.png';
-  final String _kAssets10 = 'assets/geth-install-help.png';
-  // final String _kAssets11 = 'assets/geth-command-help.png';
-  final String _kAssets12 = 'assets/go-help-1.png';
-  final String _kAssets13 = 'assets/go-help-2.png';
-  final String _kAssets14 = 'assets/go-build-run-local.png';
-  final String _kAssets15 = 'assets/go-install-systemwide.png';
-  final String _kAssets16 = 'assets/github-go-ethereum-list.png';
-  final String _kAssets17 = 'assets/which-geth-list.png';
-  final String _kAssets18 = 'assets/geth-help-1.png';
-  final String _kAssets19 = 'assets/geth-help-2.png';
-  final String _kAssets20 = 'assets/geth-help-3.png';
-  final String _kAssets21 = 'assets/geth-help-4.png';
-  final String _kAssets22 = 'assets/geth-help-5.png';
-  final String _kAssets23 = 'assets/geth-help-6.png';
-  final String _kAssets24 = 'assets/geth-syncmode-begin.png';
-  final String _kAssets25 = 'assets/geth-blockchain-p2p.png';
-  final String _kAssets26 = 'assets/ethsync-complete-closed.png';
-  final String _kAssets27 = 'assets/blockchain-size.png';
+  final String _kAsset2 = 'assets/images/go-download-website.png';
+  final String _kAsset3 = 'assets/images/footer-gopher.jpg';
+  final String _kAsset4 = 'assets/images/go-env.png';
+  final String _kAsset5 = 'assets/images/go-3-folders.png';
+  final String _kAsset6 = 'assets/images/go-hello.png';
+  final String _kAsset7 = 'assets/images/go-build-install.png';
+  final String _kAsset8 = 'assets/images/geth-web.png';
+  final String _kAsset9 = 'assets/images/gethdl-os.png';
+  final String _kAssets10 = 'assets/images/geth-install-help.png';
+  // final String _kAssets11 = 'assets/images/geth-command-help.png';
+  final String _kAssets12 = 'assets/images/go-help-1.png';
+  final String _kAssets13 = 'assets/images/go-help-2.png';
+  final String _kAssets14 = 'assets/images/go-build-run-local.png';
+  final String _kAssets15 = 'assets/images/go-install-systemwide.png';
+  final String _kAssets16 = 'assets/images/github-go-ethereum-list.png';
+  final String _kAssets17 = 'assets/images/which-geth-list.png';
+  final String _kAssets18 = 'assets/images/geth-help-1.png';
+  final String _kAssets19 = 'assets/images/geth-help-2.png';
+  final String _kAssets20 = 'assets/images/geth-help-3.png';
+  final String _kAssets21 = 'assets/images/geth-help-4.png';
+  final String _kAssets22 = 'assets/images/geth-help-5.png';
+  final String _kAssets23 = 'assets/images/geth-help-6.png';
+  final String _kAssets24 = 'assets/images/geth-syncmode-begin.png';
+  final String _kAssets25 = 'assets/images/geth-blockchain-p2p.png';
+  final String _kAssets26 = 'assets/images/ethsync-complete-closed.png';
+  final String _kAssets27 = 'assets/images/blockchain-size.png';
 
   // final String url = 'https://media.giphy.com/media/1MH245qhEF5bG/giphy.gif';
 
   @override
   Widget build(BuildContext context) {
     print('scrollbar1 loaded');
-    // return Scrollbar(
-    //   // child: const Text("hello"),
-    //   child: ListView(
-    //     children: <Widget>[
-    //       Container(
-    //         child: const Text("hello coding."),
-    //       ),
-    //       Container(child: Text(ethTextIntro)),
-    //       Container(
-    //         child: Image.asset(
-    //           _kAsset2,
-    //           height: 100.0,
-    //           width: 200.0,
-    //         ),
-    //         // onPressed: EthSyncUrl.launchURLGolangOrgDL,
-    //         // onPressed: EthSyncUrl.launchURLGolangOrgDL(),,
-    //       ),
-    //       Container(
-    //         child: Image.asset(
-    //           _kAsset4,
-    //           height: 200.0,
-    //           width: 200.0,
-    //         ),
-    //       )
-    //     ],
-    //   ),
-    // );
+
     return Scrollbar(
       child: ListView(
         children: <Widget>[
@@ -108,6 +84,57 @@ class Scrollbar1 extends StatelessWidget {
               text: ethInstallGolandGoGetWebsite,
               // EthSyncLocalizations.of(context).ethInstallGolangGoGetWebsite,
               textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          // Container(
+          Container(
+            child: Image.asset(
+              _kAsset3,
+              height: 100.0,
+              width: 200.0,
+            ),
+            // onPressed: EthSyncUrl.launchURLGolangOrgDL,
+            // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
+          ),
+          Container(
+            child: Image.asset(
+              _kAsset2,
+              height: 200.0,
+              width: 300.0,
+            ),
+            // onPressed: EthSyncUrl.launchURLGolangOrgDL,
+            // // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
+          ),
+          Container(
+            child: Linkify(
+              onOpen: (link) async {
+                if (await canLaunch(link.url)) {
+                  await launch(link.url);
+                } else {
+                  throw 'Could not launch $link';
+                }
+              },
+              text: ethInstallGolangInstallInstructions,
+              // humanize: true,
+              // text: EthSyncLocalizations.of(context)
+              //     .ethInstallGolangInstallInstructions,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: const Text(
+              ethCheckGoHelp,
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.red,
                 fontStyle: FontStyle.italic,
@@ -115,287 +142,238 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAsset3,
-          //     height: 100.0,
-          //     width: 200.0,
-          //   ),
-          //   onPressed: EthSyncUrl.launchURLGolangOrgDL,
-          //   // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAsset2,
-          //     height: 200.0,
-          //     width: 300.0,
-          //   ),
-          //   onPressed: EthSyncUrl.launchURLGolangOrgDL,
-          //   // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
-          // ),
-          // Container(
-          //   child: Linkify(
-          //     onOpen: (link) async {
-          //       if (await canLaunch(link.url)) {
-          //         await launch(link.url);
-          //       } else {
-          //         throw 'Could not launch $link';
-          //       }
-          //     },
-          //     humanize: true,
-          //     text: EthSyncLocalizations.of(context)
-          //         .ethInstallGolangInstallInstructions,
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       color: Colors.red,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          // Container(
-          //   child: Text(
-          //     EthSyncLocalizations.of(context).ethCheckGoHelp,
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       color: Colors.red,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAssets12,
-          //     // height: 200.0,
-          //     // width: 300.0,
-          //   ),
-          //   onPressed: () async {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => EthsyncExpandImage(
-          //                 image: _kAssets12,
-          //                 title: "\'go help\' 1",
-          //               )),
-          //     );
-          //   },
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAssets13,
-          //     // height: 200.0,
-          //     // width: 300.0,
-          //   ),
-          //   onPressed: () async {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => EthsyncExpandImage(
-          //                 image: _kAssets13,
-          //                 title: "\'go help\' 2",
-          //               )),
-          //     );
-          //   },
-          // ),
-          // Container(
-          //   child: Text(
-          //     EthSyncLocalizations.of(context).ethCheckGoEnv,
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       color: Colors.red,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAsset4,
-          //     // height: 200.0,
-          //     // width: 300.0,
-          //   ),
-          //   onPressed: () async {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => EthsyncExpandImage(
-          //                 image: _kAsset4,
-          //                 title: "\'go env\'",
-          //               )),
-          //     );
-          //   },
-          // ),
-          // Container(
-          //   child: Text(
-          //     EthSyncLocalizations.of(context).ethCheckGoPath3Folders,
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       color: Colors.red,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAsset5,
-          //     // height: 200.0,
-          //     // width: 300.0,
-          //   ),
-          //   onPressed: () async {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => EthsyncExpandImage(
-          //                 image: _kAsset5,
-          //                 title: "GOPATH: bin, pkg, src",
-          //               )),
-          //     );
-          //   },
-          // ),
-          // //heading Golang Test Installation -----------------------------------------------
-          // Container(
-          //   padding: const EdgeInsets.all(15.0),
-          //   width: 60.0,
-          //   height: 60.0,
-          //   decoration: BoxDecoration(
-          //     shape: BoxShape.rectangle,
-          //     color: Colors.yellow.shade500,
-          //     borderRadius: BorderRadius.all(Radius.circular(50.0)),
-          //   ),
-          //   child: Text(
-          //     EthSyncLocalizations.of(context).ethGolangTestHeading,
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       color: Colors.red.shade300,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 24.0,
-          //     ),
-          //   ),
-          // ),
-          // Container(
-          //   child: Text(
-          //     EthSyncLocalizations.of(context).ethGoTestYourInstallation,
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       color: Colors.red,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          // Container(
-          //   child: Text(
-          //     EthSyncLocalizations.of(context).ethGoHello,
-          //     textAlign: TextAlign.left,
-          //     style: TextStyle(
-          //       color: Colors.blue,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAsset6,
-          //     // height: 200.0,
-          //     // width: 300.0,
-          //   ),
-          //   onPressed: () async {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => EthsyncExpandImage(
-          //                 image: _kAsset6,
-          //                 title: "go\/src\/hello.go",
-          //               )),
-          //     );
-          //   },
-          // ),
-          // //container-intl-linkify
-          // Container(
-          //   child: Text(
-          //     EthSyncLocalizations.of(context).ethGoBuild,
-          //     textAlign: TextAlign.left,
-          //     style: TextStyle(
-          //       color: Colors.red,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAsset7,
-          //     // height: 200.0,
-          //     // width: 300.0,
-          //   ),
-          //   onPressed: () async {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => EthsyncExpandImage(
-          //                 image: _kAsset7,
-          //                 title: "webpage: go build, go install",
-          //               )),
-          //     );
-          //   },
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAssets14,
-          //     // height: 200.0,
-          //     // width: 300.0,
-          //   ),
-          //   onPressed: () async {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => EthsyncExpandImage(
-          //                 image: _kAssets14,
-          //                 title: "go build local install",
-          //               )),
-          //     );
-          //   },
-          // ),
-          // Container(
-          //   child: Linkify(
-          //     onOpen: (link) async {
-          //       if (await canLaunch(link.url)) {
-          //         await launch(link.url);
-          //       } else {
-          //         throw 'Could not launch $link';
-          //       }
-          //     },
-          //     humanize: true,
-          //     text: EthSyncLocalizations.of(context).ethGoInstall,
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       color: Colors.red,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          // FlatButton(
-          //   child: Image.asset(
-          //     _kAssets15,
-          //     // height: 200.0,
-          //     // width: 300.0,
-          //   ),
-          //   onPressed: () async {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => EthsyncExpandImage(
-          //                 image: _kAssets15,
-          //                 title: "go install systemwide",
-          //               )),
-          //     );
-          //   },
-          // ),
-          // //heading Geth  --------------------------------------------
+          Container(
+            child: Image.asset(
+              _kAssets12,
+              // height: 200.0,
+              // width: 300.0,
+            ),
+            // onPressed: () async {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => EthsyncExpandImage(
+            //               image: _kAssets12,
+            //               title: "\'go help\' 1",
+            //             )),
+            //   );
+            // },
+          ),
+          Container(
+            child: Image.asset(
+              _kAssets13,
+              // height: 200.0,
+              // width: 300.0,
+            ),
+            // onPressed: () async {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => EthsyncExpandImage(
+            //               image: _kAssets13,
+            //               title: "\'go help\' 2",
+            //             )),
+            //   );
+            // },
+          ),
+          Container(
+            child: const Text(
+              ethCheckGoEnv,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: Image.asset(
+              _kAsset4,
+              // height: 200.0,
+              // width: 300.0,
+            ),
+            // onPressed: () async {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => EthsyncExpandImage(
+            //               image: _kAsset4,
+            //               title: "\'go env\'",
+            //             )),
+            //   );
+            // },
+          ),
+          Container(
+            child: const Text(
+              ethCheckGoPath3Folders,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: Image.asset(
+              _kAsset5,
+              // height: 200.0,
+              // width: 300.0,
+            ),
+            // onPressed: () async {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => EthsyncExpandImage(
+            //               image: _kAsset5,
+            //               title: "GOPATH: bin, pkg, src",
+            //             )),
+            //   );
+            // },
+          ),
+          //heading Golang Test Installation -----------------------------------------------
+          Container(
+            padding: const EdgeInsets.all(15.0),
+            width: 60.0,
+            height: 60.0,
+            decoration: BoxDecoration(
+              shape: BoxShape.rectangle,
+              color: Colors.yellow.shade500,
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+            ),
+            child: Text(
+              ethGolangTestHeading,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.red.shade300,
+                fontStyle: FontStyle.italic,
+                fontSize: 24.0,
+              ),
+            ),
+          ),
+          Container(
+            child: const Text(
+              ethGoTestYourInstallation,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: const Text(
+              ethGoHello,
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                color: Colors.blue,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: Image.asset(
+              _kAsset6,
+              // height: 200.0,
+              // width: 300.0,
+            ),
+            // onPressed: () async {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => EthsyncExpandImage(
+            //               image: _kAsset6,
+            //               title: "go\/src\/hello.go",
+            //             )),
+            //   );
+            // },
+          ),
+          //container-intl-linkify
+          Container(
+            child: const Text(
+              ethGoBuild,
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: Image.asset(
+              _kAsset7,
+              // height: 200.0,
+              // width: 300.0,
+            ),
+            // onPressed: () async {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => EthsyncExpandImage(
+            //               image: _kAsset7,
+            //               title: "webpage: go build, go install",
+            //             )),
+            //   );
+            // },
+          ),
+          Container(
+            child: Image.asset(
+              _kAssets14,
+              // height: 200.0,
+              // width: 300.0,
+            ),
+            // onPressed: () async {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => EthsyncExpandImage(
+            //               image: _kAssets14,
+            //               title: "go build local install",
+            //             )),
+            //   );
+            // },
+          ),
+          Container(
+            child: Linkify(
+              onOpen: (link) async {
+                if (await canLaunch(link.url)) {
+                  await launch(link.url);
+                } else {
+                  throw 'Could not launch $link';
+                }
+              },
+              // humanize: true,
+              text: ethGoInstall,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: Image.asset(
+              _kAssets15,
+              // height: 200.0,
+              // width: 300.0,
+            ),
+            // onPressed: () async {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => EthsyncExpandImage(
+            //               image: _kAssets15,
+            //               title: "go install systemwide",
+            //             )),
+            // );
+            // },
+          ),
+          //heading Geth  --------------------------------------------
           // Container(
           //   padding: const EdgeInsets.all(15.0),
           //   width: 60.0,
@@ -454,7 +432,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAsset8,
           //     height: 200.0,
@@ -481,7 +459,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAsset9,
           //     height: 120.0,
@@ -509,7 +487,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets10,
           //     height: 200.0,
@@ -548,7 +526,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets16,
           //     // height: 200.0,
@@ -587,7 +565,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets17,
           //     // height: 200.0,
@@ -615,7 +593,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets18,
           //     // height: 200.0,
@@ -632,7 +610,7 @@ class Scrollbar1 extends StatelessWidget {
           //     );
           //   },
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets19,
           //     // height: 200.0,
@@ -649,7 +627,7 @@ class Scrollbar1 extends StatelessWidget {
           //     );
           //   },
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets20,
           //     // height: 200.0,
@@ -666,7 +644,7 @@ class Scrollbar1 extends StatelessWidget {
           //     );
           //   },
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets21,
           //     // height: 200.0,
@@ -683,7 +661,7 @@ class Scrollbar1 extends StatelessWidget {
           //     );
           //   },
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets22,
           //     // height: 200.0,
@@ -700,7 +678,7 @@ class Scrollbar1 extends StatelessWidget {
           //     );
           //   },
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets23,
           //     // height: 200.0,
@@ -779,7 +757,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets24,
           //     // height: 200.0,
@@ -807,7 +785,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets25,
           //     // height: 200.0,
@@ -836,7 +814,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets26,
           //     // height: 200.0,
@@ -864,7 +842,7 @@ class Scrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          // FlatButton(
+          // Container(
           //   child: Image.asset(
           //     _kAssets27,
           //     // height: 200.0,
