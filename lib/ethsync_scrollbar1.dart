@@ -193,6 +193,7 @@ class Scrollbar1 extends StatelessWidget {
               // height: 200.0,
               // width: 300.0,
             ),
+            // onPressed: () {},
             // onPressed: () async {
             //   Navigator.push(
             //     context,
@@ -264,10 +265,10 @@ class Scrollbar1 extends StatelessWidget {
             ),
           ),
           Container(
-            child: const Text(
+            child: Text(
               ethGoHello,
               textAlign: TextAlign.left,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.blue,
                 fontStyle: FontStyle.italic,
                 fontSize: 20.0,

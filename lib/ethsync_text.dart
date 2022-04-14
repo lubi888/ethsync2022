@@ -1,8 +1,5 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-
-// final String url_cry_malware = "https://coinpedia.org/news/firefox-upgrades-to-ban-crypto-mining-malware/";
-
 const String ethTextFonts =
     "\u03BB \n\tgreek lambda \n\u1688 \n\togham tinne \n\u304B \n\tjapanese ka \n\u4E07 \n\tcjk ideograph 10,000"
     "\n\u4DC1 \n\tiching \n\u1300 \n\tethiopic symbol \n\u{13080} \n\tegyptian eye \n\u{132BD} \n\tegyptian djed \n\u{1309E} \n\tegyptian di hand arm \n\u{133D9} \n\tegyptian di \n";
@@ -108,7 +105,7 @@ const String ethTextMiners =
 const String textShareURL = "www.et.eu";
 
 // 20220413 text intl untranslated
-const String title = "ethSync 20220413";
+const String title = "ethSync 20220414";
 const String home = "home";
 const String code = "code";
 const String online = "online";
@@ -151,7 +148,7 @@ const String ethCheckGoHelp =
         'Type in the following code:\n \'go help\'\n'
         'This is a list of all available commands.');
 
-const String ethCheckGoEnv = ('Type in the following code:\n \'go env\'n');
+const String ethCheckGoEnv = ('Type in the following code:\n \'go env\'\n');
 
 const String ethCheckGoPath3Folders =
     ('Look for the GOPATH variable and this is called the \'workspace\' where we are going to put all our golang apps in one form or another.\n'
@@ -163,12 +160,16 @@ const String ethGoTestYourInstallation =
         '\nIn the \'src\' directory we will create another folder name \'hello\' and inside this new directory create and new file called \'hello.go\'.\n'
         '\nInside this new file write the following code:');
 
-const String ethGoHello = ('package main\n\n'
-    'import \"fmt\"\n\n'
-    'func main() {\n'
-    '\t\t\t\tfmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
-    '\t\t\t\tfmt.Printf(\"isn\'t this exciting?!\")'
-    '\n}');
+String ethGoHello = ('package main\n\n'
+        'import \"fmt\"\n\n'
+        'func main() {\n'
+        'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
+        'fmt.Printf(\"isn\'t this exciting?!\")'
+        '\n}'
+    // '\t\t\t\tfmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
+    // '\t\t\t\tfmt.Printf(\"isn\'t this exciting?!\")'
+    // '\n}'
+    );
 
 const String ethGoBuild =
     ('Now all that is left is to build or install the go hello program. A local build can be performed with \'go build\'.\n\n'
@@ -183,126 +184,58 @@ const String ethGoInstall =
         'Note that we now have a hello program in the form: \\go\\bin\\hello.exe\n'
         'Check this link https://pocketgophers.com/go-install-vs-go-build for more details.');
 
-  // const String ethGethWebsite {
-  //   return Intl.message(
-  //       'Visit https://eth.ethereum.org and take a look at eth which we are going to use to synchronise with the ethereum blockchain.',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethWebsite =
+    ('Visit https://eth.ethereum.org and take a look at eth which we are going to use to synchronise with the ethereum blockchain.');
 
-  // const String ethGethWebsite3Implementations {
-  //   return Intl.message(
-  //       '\nNotice from the website:\n'
-  //       '\"Go Ethereum is one of the three original implementations (along with C++ and Python) of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3.\"\n'
-  //       '\nThe reason this author finds the go implementation of ether the best is because golang https://en.wikipedia.org/wiki/Go_(programming_language) is more modern programming language than Python and C++. Go was written by Ken Thompson, Rob Pike and Robert Griesemer with concurrency https://talks.golang.org/2012/concurrency.slide#1 built in.\n'
-  //       '\nThis matters a lot because the blockchain is changing continually all over the world concurrently.',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethWebsite3Implementations = ('\nNotice from the website:\n'
+    '\"Go Ethereum is one of the three original implementations (along with C++ and Python) of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3.\"\n'
+    '\nThe reason this author finds the go implementation of ether the best is because golang https://en.wikipedia.org/wiki/Go_(programming_language) is more modern programming language than Python and C++. Go was written by Ken Thompson, Rob Pike and Robert Griesemer with concurrency https://talks.golang.org/2012/concurrency.slide#1 built in.\n'
+    '\nThis matters a lot because the blockchain is changing continually all over the world concurrently.');
 
-  // const String ethGethWebsiteInstall {
-  //   return Intl.message(
-  //       'Visit https://eth.ethereum.org/downloads and choose an Operating System download.',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethWebsiteInstall =
+    ('Visit https://eth.ethereum.org/downloads and choose an Operating System download.');
 
-  // const String ethGethWebsiteInstallHelp {
-  //   return Intl.message(
-  //       'Visit https://eth.ethereum.org/install-and-build/Installing-Geth and read some of the docs and notes on each Operating System download.',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethWebsiteInstallHelp =
+    ('Visit https://eth.ethereum.org/install-and-build/Installing-Geth and read some of the docs and notes on each Operating System download.');
 
-  // const String ethGethWebsiteManyImplementations {
-  //   return Intl.message(
-  //       'Notice from the website:\n'
-  //       '\"The Go implementation of Ethereum can be installed using a variety of ways. These include obtaining it as part of Mist; installing it via your favorite package manager; downloading a standalone pre-built bundle; running as a docker container; or building it yourself. This document will detail all of these possibilities to get you quickly joining the Ethereum network using whatever means you prefer.\"\n',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethWebsiteManyImplementations = ('Notice from the website:\n'
+    '\"The Go implementation of Ethereum can be installed using a variety of ways. These include obtaining it as part of Mist; installing it via your favorite package manager; downloading a standalone pre-built bundle; running as a docker container; or building it yourself. This document will detail all of these possibilities to get you quickly joining the Ethereum network using whatever means you prefer.\"\n');
+const String ethGithubGoEthereumList =
+    ('Change to the \'\\go\\src\\github.com\\ethereum\\go-ethereum\\\' directory and then type \'ls\' to list the contents.\n'
+        'This is a mirror image of the \'https://github.com/ethereum/go-ethereum\' repository where all the eth programmers commit new code to frequently.\n');
 
-  // const String ethGithubGoEthereumList {
-  //   return Intl.message(
-  //       'Change to the \'\\go\\src\\github.com\\ethereum\\go-ethereum\\\' directory and then type \'ls\' to list the contents.\n'
-  //       'This is a mirror image of the \'https://github.com/ethereum/go-ethereum\' repository where all the eth programmers commit new code to frequently.\n',
-  //       name: 'ethGoBuild',
-  //       desc: 'into txt');
-  // }
+const String ethGethVersion =
+    ('To get more info about one\'s eth installation type in the following command:\n'
+        '\'eth version\'\n'
+        'Take note of some of the important details like how eth is using a differnt version of golang than what we have just installed.\n');
 
-  // const String ethGethVersion {
-  //   return Intl.message(
-  //       'To get more info about one\'s eth installation type in the following command:\n'
-  //       '\'eth version\'\n'
-  //       'Take note of some of the important details like how eth is using a differnt version of golang than what we have just installed.\n',
-  //       name: 'ethGethVersion',
-  //       desc: 'into txt');
-  // }
+const String ethWhichGethList =
+    ('One last thing. To check the actual location of the Geth program type in \'which eth\' and note the output directory as this will depend upon one\'s operating system.');
 
-  // const String ethWhichGethList {
-  //   return Intl.message(
-  //       'One last thing. To check the actual location of the Geth program type in \'which eth\' and note the output directory as this will depend upon one\'s operating system.',
-  //       name: 'ethGoBuild',
-  //       desc: 'into txt');
-  // }
+const String ethGethCommandHelp =
+    ('Now we must check that Geth has been installed and runs correctly. Type in the following command:\n'
+        '\'eth help\'');
 
-  // const String ethGethCommandHelp {
-  //   return Intl.message(
-  //       'Now we must check that Geth has been installed and runs correctly. Type in the following command:\n'
-  //       '\'eth help\'',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethHelp =
+    ('Now we must check that Geth has been installed and runs correctly. Type in the following command:\n'
+        '\'eth help\'');
 
-  // const String ethGethHelp {
-  //   return Intl.message(
-  //       'Now we must check that Geth has been installed and runs correctly. Type in the following command:\n'
-  //       '\'eth help\'',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethSyncmodeLight =
+    ('Now we are going to pull everything toether and we are going to start to download the bloackchain using p2p, peer to peer, with the following command:\n'
+        '\'eth --syncmode light --cache=2048\'\n');
 
-  // const String ethGethSyncmodeLight {
-  //   return Intl.message(
-  //       'Now we are going to pull everything toether and we are going to start to download the bloackchain using p2p, peer to peer, with the following command:\n'
-  //       '\'eth --syncmode light --cache=2048\'\n'
-  //       'What happened? What is the output?',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethBlockchainSyncing =
+    ('Its happening now: we are downloading the ethereum bloackchain using eth p2p.\n'
+        'Take a look at this happening now. Take a look at some of the output and try to discerne what\'s happening. Notice how some of the \'count\' colum have various numbers and sometimes \'2048.\' This is related to the cache command that we gave at the beginning.');
 
-  // const String ethGethBlockchainSyncing {
-  //   return Intl.message(
-  //       'Its happening now: we are downloading the ethereum bloackchain using eth p2p.\n'
-  //       'Take a look at this happening now. Take a look at some of the output and try to discerne what\'s happening. Notice how some of the \'count\' colum have various numbers and sometimes \'2048.\' This is related to the cache command that we gave at the beginning.',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethSyncingCompletedDisconnected =
+    ('Notice how the \'count\' has no deminished down to just 1. This is the end of all our hard work and it means that we now have a full copy of the ethereum blockchain on our computer.\n'
+        'The only procedure now is to safely disconnect to the blockchain. Press the two following buttons:\n'
+        '\'Ctrl and then c\'');
 
-  // const String ethGethSyncingCompletedDisconnected {
-  //   return Intl.message(
-  //       'Notice how the \'count\' has no deminished down to just 1. This is the end of all our hard work and it means that we now have a full copy of the ethereum blockchain on our computer.\n'
-  //       'The only procedure now is to safely disconnect to the blockchain. Press the two following buttons:\n'
-  //       '\'Ctrl and then c\'',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
+const String ethGethBlockchainLocation =
+    ('Notice that the  address of the blockchain is listed in the last line. Here it is \'C:Users\\iveagh-win10\\AppData\\Roaming\\Ethereum\\eth\\lightchaindata\'\n'
+        'Change to this address and in the ethereum do a right-click to find the properties of the folder. This will give you the size of the bloackchain is taking up on your system.\n');
+const String ethUrlEthereumOrg = ('https://www.ethereum.org');
 
-  // const String ethGethBlockchainLocation {
-  //   return Intl.message(
-  //       'Notice that the  address of the blockchain is listed in the last line. Here it is \'C:Users\\iveagh-win10\\AppData\\Roaming\\Ethereum\\eth\\lightchaindata\'\n'
-  //       'Change to this address and in the ethereum do a right-click to find the properties of the folder. This will give you the size of the bloackchain is taking up on your system.\n',
-  //       name: 'ethInstallGolangGoGetWebsite',
-  //       desc: 'into txt');
-  // }
-
-  // const String ethUrlEthereumOrg {
-  //   return Intl.message('https://www.ethereum.org');
-  // }
-
-  // const String ethImgTermGreen {
-  //   return Intl.message(
-  //     '1st green terminal page try turning page',
-  //     name: 'ethImgTermGreen',
-  //     desc: 'img',
-  //   );
+const String ethImgTermGreen = ('1st green terminal page try turning page');

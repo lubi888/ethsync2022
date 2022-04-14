@@ -102,6 +102,7 @@ class EthSyncUrl {
   //       sharePositionOrigin: box.localToGlobal(Offset.zero) & box.size);
   // }
 
+  // final String url_cry_malware = "https://coinpedia.org/news/firefox-upgrades-to-ban-crypto-mining-malware/";
   // visit golang.org/dl
   // class EthSyncUrl {
   static void launchURLGolangOrgDL() async {
