@@ -160,7 +160,7 @@ const String ethGoTestYourInstallation =
         '\nIn the \'src\' directory we will create another folder name \'hello\' and inside this new directory create and new file called \'hello.go\'.\n'
         '\nInside this new file write the following code:');
 
-String ethGoHello = ('package main\n\n'
+const String ethGoHello = ('package main\n\n'
         'import \"fmt\"\n\n'
         'func main() {\n'
         'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
