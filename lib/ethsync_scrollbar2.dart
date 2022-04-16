@@ -48,10 +48,10 @@ class Scrollbar2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("scrollbar3 loaded");
+    print("scrollbar2 loaded");
     //print current locale
     Locale myLocale = Localizations.localeOf(context);
-    print(myLocale.toString() + ' on Scrollbar3');
+    print(myLocale.toString() + ' on Scrollbar2');
     return Scrollbar(
       child: Container(
 //                alignment: Alignment.center,
