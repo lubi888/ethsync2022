@@ -1,12 +1,76 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
-// import 'package:linkify/linkify.dart'
 import './ethsync_text.dart';
 // import './ethsync_urllinks.dart';
 
+// import 'package:flutter/material.dart';
+// import 'package:flutter_native_web/flutter_native_web.dart';
+// import 'package:flutter/gestures.dart';
+// import 'package:flutter/foundation.dart';
+
+// class Scrollbar3 extends StatefulWidget {
+//   @override
+//   _MyAppState createState() => _MyAppState();
+// }
+
+// class _MyAppState extends State<Scrollbar3> {
+// // late moodifier no null safety
+//   late WebController webController;
+//   // WebController new WebController
+
+//   @override
+//   void initState() {
+//     super.initState();
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     FlutterNativeWeb flutterWebView = FlutterNativeWeb(
+//       onWebCreated: onWebCreated,
+//       gestureRecognizers: <Factory<OneSequenceGestureRecognizer>>[
+//         Factory<OneSequenceGestureRecognizer>(
+//           () => TapGestureRecognizer(),
+//         ),
+//       ].toSet(),
+//     );
+
+//     return new MaterialApp(
+//       home: new Scaffold(
+//           appBar: new AppBar(
+//             title: const Text('Native WebView as Widget'),
+//           ),
+//           body: new SingleChildScrollView(
+//             child: new Column(
+//               children: <Widget>[
+//                 new Text('Native WebView as Widget\n\n'),
+//                 new Container(
+//                   child: flutterWebView,
+//                   height: 300.0,
+//                   width: 500.0,
+//                 ),
+//               ],
+//             ),
+//           )),
+//     );
+//   }
+
+//   void onWebCreated(webController) {
+//     this.webController = webController;
+//     // this.webController.loadUrl("https://flutter.io/");
+//     this
+//         .webController
+//         .loadUrl("https://trade.kraken.com/markets/kraken/eth/eur");
+//     this.webController.onPageStarted.listen((url) => print("Loading $url"));
+//     this
+//         .webController
+//         .onPageFinished
+//         .listen((url) => print("Finished loading $url"));
+//   }
+// }
+
 class Scrollbar3 extends StatelessWidget {
-  final String _kAsset2 = 'assets/images/go-download-website.png';
+  // final String _kAsset2 = 'assets/images/go-download-website.png';
   @override
   Widget build(BuildContext context) {
     print('scrollbar3 loaded');
@@ -54,8 +118,7 @@ class Scrollbar3 extends StatelessWidget {
                 fontSize: 20.0,
               ),
             ),
-          ),
-// }
+          )
         ],
       ),
     );
@@ -278,3 +341,5 @@ class Scrollbar3 extends StatelessWidget {
 // //     );
 // //   }
 // // }
+
+// 2019 import web view
