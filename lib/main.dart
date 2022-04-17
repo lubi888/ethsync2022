@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 //local classes
 import './ethsync_appbar.dart';
+import './ethsync_walletdrawer.dart';
 import './ethsync_home.dart';
 
 void main() {
@@ -9,10 +10,11 @@ void main() {
 }
 
 class ethSync extends StatelessWidget {
-//   const MyApp({Key? key}) : super(key: key);
+  const ethSync({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // ignore: avoid_print
     print("ethsync main loaded");
     return MaterialApp(
         title: 'ethSync2022',
@@ -20,7 +22,7 @@ class ethSync extends StatelessWidget {
           length: 5,
           child: Scaffold(
             appBar: EthSyncAppBar(),
-            // drawer: EthSyncDrawer(),
+            drawer: const EthSyncWalletDrawer(),
             body: EthSyncHome(),
           ),
         ));
