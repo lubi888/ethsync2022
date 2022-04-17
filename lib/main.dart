@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 //local classes
 import './ethsync_appbar.dart';
-import './ethsync_walletdrawer.dart';
+// import './ethsync_walletdrawer.dart';
+import './ethsync_navdrawer.dart';
 import './ethsync_home.dart';
 
 void main() {
@@ -16,13 +17,13 @@ class EthSync extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: avoid_print
     print("ethsync main loaded");
-    return MaterialApp(
+    return const MaterialApp(
         title: 'ethSync2022',
         home: DefaultTabController(
           length: 5,
           child: Scaffold(
-            appBar: const EthSyncAppBar(),
-            drawer: const EthSyncWalletDrawer(),
+            appBar: EthSyncAppBar(),
+            drawer: EthSyncNavDrawer(),
             body: EthSyncHome(),
           ),
         ));
