@@ -33,6 +33,8 @@ import './ethsync_urllinks.dart';
 // import './ethsync_txt.dart';
 
 class Scrollbar2 extends StatelessWidget {
+  const Scrollbar2({Key? key}) : super(key: key);
+
   final String _kAsset0 = 'assets/images/geth1win.png';
   final String _kAsset1 = 'assets/images/kraken-eth-eur.png';
   final String _kasset2 = 'assets/images/ethStackExchange.png';

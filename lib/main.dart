@@ -6,11 +6,11 @@ import './ethsync_walletdrawer.dart';
 import './ethsync_home.dart';
 
 void main() {
-  runApp(ethSync());
+  runApp(const EthSync());
 }
 
-class ethSync extends StatelessWidget {
-  const ethSync({Key? key}) : super(key: key);
+class EthSync extends StatelessWidget {
+  const EthSync({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class ethSync extends StatelessWidget {
         home: DefaultTabController(
           length: 5,
           child: Scaffold(
-            appBar: EthSyncAppBar(),
+            appBar: const EthSyncAppBar(),
             drawer: const EthSyncWalletDrawer(),
             body: EthSyncHome(),
           ),

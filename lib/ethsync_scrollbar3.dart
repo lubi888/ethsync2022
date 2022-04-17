@@ -70,6 +70,8 @@ import './ethsync_text.dart';
 // }
 
 class Scrollbar3 extends StatelessWidget {
+  const Scrollbar3({Key? key}) : super(key: key);
+
   // final String _kAsset2 = 'assets/images/go-download-website.png';
   @override
   Widget build(BuildContext context) {

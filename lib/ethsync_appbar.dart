@@ -41,6 +41,8 @@ void onSelect(item) {
 
 // implements PreferredSizeWidget?
 class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const EthSyncAppBar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     print("ethsync appbar loaded");

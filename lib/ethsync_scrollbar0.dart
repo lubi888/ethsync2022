@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import './ethsync_text.dart';
 
 class Scrollbar0 extends StatelessWidget {
-  // const Scrollbar0({ Key? key }) : super(key: key);
+  const Scrollbar0({Key? key}) : super(key: key);
   // final String _kAsset0 = 'assets/devcon1.png';
   // final String _kAsset2 = 'assets/etcBullet.png';
   // final String _kAsset3 = 'assets/ethGreenHelp.png';

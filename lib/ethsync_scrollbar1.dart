@@ -6,6 +6,8 @@ import './ethsync_text.dart';
 import './ethsync_urllinks.dart';
 
 class Scrollbar1 extends StatelessWidget {
+  const Scrollbar1({Key? key}) : super(key: key);
+
   // const Scrollbar0({ Key? key }) : super(key: key);
   //   Locale myLocale = Localizations.localeOf(context);
   // print(myLocale.toString() + ' on Scrollbar2');

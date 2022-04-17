@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import './ethsync_text.dart';
 
 class Scrollbar4 extends StatelessWidget {
-  // const Scrollbar4({ Key? key }) : super(key: key);
+  const Scrollbar4({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
