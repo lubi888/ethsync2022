@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import './ethsync_urllinks.dart';
 import './ethsync_walletdrawer.dart';
 import './ethsync_barcodescanner.dart';
+import './ethsync_extendedimage.dart';
 // import './ethsync_scrollbar0.dart';
 // import './ethsync_scrollbar1.dart';
 // import './ethsync_scrollbar2.dart';
