@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 // import './ethsync_text.dart';
 import './ethsync_urllinks.dart';
 import './ethsync_walletdrawer.dart';
+import './ethsync_barcodescanner.dart';
 // import './ethsync_scrollbar0.dart';
 // import './ethsync_scrollbar1.dart';
 // import './ethsync_scrollbar2.dart';
@@ -191,7 +192,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
+                        builder: (context) => const EthSyncBarcodeScan()));
                 // MaterialPageRoute(builder: (context) => QRMainScreen()));
               }),
           ListTile(
@@ -214,7 +215,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
+                        builder: (context) => const EthSyncBarcodeScan()));
               }),
           const ListTile(
             leading: Icon(Icons.launch, color: Colors.greenAccent),
