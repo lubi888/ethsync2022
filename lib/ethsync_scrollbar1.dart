@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import './ethsync_text.dart';
 import './ethsync_urllinks.dart';
+import './ethsync_extendedimage.dart';
 
 class Scrollbar1 extends StatelessWidget {
   const Scrollbar1({Key? key}) : super(key: key);
@@ -144,39 +145,39 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets12,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets12,
-            //               title: "\'go help\' 1",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets12,
+                          title: 'go help 1',
+                        )),
+              );
+            },
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets13,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets13,
-            //               title: "\'go help\' 2",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets13,
+                          title: "\'go help\' 2",
+                        )),
+              );
+            },
           ),
           Container(
             child: const Text(
@@ -189,23 +190,23 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAsset4,
               // height: 200.0,
               // width: 300.0,
             ),
             // onPressed: () {},
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAsset4,
-            //               title: "\'go env\'",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAsset4,
+                          title: "\'go env\'",
+                        )),
+              );
+            },
           ),
           Container(
             child: const Text(
@@ -218,22 +219,22 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAsset5,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAsset5,
-            //               title: "GOPATH: bin, pkg, src",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAsset5,
+                          title: "GOPATH: bin, pkg, src",
+                        )),
+              );
+            },
           ),
           //heading Golang Test Installation -----------------------------------------------
           Container(
@@ -270,29 +271,29 @@ class Scrollbar1 extends StatelessWidget {
             child: const Text(
               ethGoHello,
               textAlign: TextAlign.left,
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.blue,
                 fontStyle: FontStyle.italic,
                 fontSize: 20.0,
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAsset6,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAsset6,
-            //               title: "go\/src\/hello.go",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAsset6,
+                          title: "go\/src\/hello.go",
+                        )),
+              );
+            },
           ),
           //container-intl-linkify
           Container(
@@ -306,39 +307,39 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAsset7,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAsset7,
-            //               title: "webpage: go build, go install",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAsset7,
+                          title: "webpage: go build, go install",
+                        )),
+              );
+            },
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets14,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets14,
-            //               title: "go build local install",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets14,
+                          title: "go build local install",
+                        )),
+              );
+            },
           ),
           Container(
             child: Linkify(
@@ -359,22 +360,22 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets15,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets15,
-            //               title: "go install systemwide",
-            //             )),
-            // );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets15,
+                          title: "go install systemwide",
+                        )),
+              );
+            },
           ),
           //heading Geth  --------------------------------------------
           Container(
@@ -527,22 +528,22 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets16,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets16,
-            //               title: "\\src\\github.com\\ethereum\\go-ethereum",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets16,
+                          title: "\\src\\github.com\\ethereum\\go-ethereum",
+                        )),
+              );
+            },
           ),
           Container(
             child: const Text(
@@ -566,22 +567,22 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets17,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets17,
-            //               title: "\'which geth\' list",
-            //             )),
-            //     );
-            //   },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets17,
+                          title: "\'which geth\' list",
+                        )),
+              );
+            },
           ),
           Container(
             child: const Text(
@@ -594,107 +595,107 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets18,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets18,
-            //               title: "\'geth help\' 1",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets18,
+                          title: "\'geth help\' 1",
+                        )),
+              );
+            },
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets19,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets19,
-            //               title: "\'geth help\' 2",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets19,
+                          title: "\'geth help\' 2",
+                        )),
+              );
+            },
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets20,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets20,
-            //               title: "\'geth help\' 3",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets20,
+                          title: "\'geth help\' 3",
+                        )),
+              );
+            },
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets21,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets21,
-            //               title: "\'geth help\' 4",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets21,
+                          title: "\'geth help\' 4",
+                        )),
+              );
+            },
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets22,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets22,
-            //               title: "\'geth help\' 5",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets22,
+                          title: "\'geth help\' 5",
+                        )),
+              );
+            },
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets23,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets23,
-            //               title: "\'geth help\' 6",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets23,
+                          title: "\'geth help\' 6",
+                        )),
+              );
+            },
           ),
           //run geth - synchronise ethereum blockchain heading   -----------------------------------------------------
           Container(
@@ -758,22 +759,22 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets24,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets24,
-            //               title: "geth --syncmode light --cache=2048",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets24,
+                          title: "geth --syncmode light --cache=2048",
+                        )),
+              );
+            },
           ),
           Container(
             child: const Text(
@@ -786,22 +787,22 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets25,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets25,
-            //               title: "geth bloackchain p2p syncing",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets25,
+                          title: "geth bloackchain p2p syncing",
+                        )),
+              );
+            },
           ),
           Container(
             child: const Text(
@@ -814,22 +815,22 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets26,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets26,
-            //               title: "ethereum syncing completed, disconnected",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets26,
+                          title: "ethereum syncing completed, disconnected",
+                        )),
+              );
+            },
           ),
           Container(
             child: const Text(
@@ -842,22 +843,22 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          TextButton(
             child: Image.asset(
               _kAssets27,
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAssets27,
-            //               title: "blockchain location and size",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAssets27,
+                          title: "blockchain location and size",
+                        )),
+              );
+            },
           ),
           Container(
             width: 150.0,

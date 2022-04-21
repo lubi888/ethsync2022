@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import './ethsync_urllinks.dart';
 import './ethsync_walletdrawer.dart';
 import './ethsync_barcodescanner.dart';
-import './ethsync_extendedimage.dart';
+// import './ethsync_extendedimage.dart';
 // import './ethsync_scrollbar0.dart';
 // import './ethsync_scrollbar1.dart';
 // import './ethsync_scrollbar2.dart';
@@ -193,6 +193,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
+                        // link to websites external if necessary
                         builder: (context) => const EthSyncBarcodeScan()));
                 // MaterialPageRoute(builder: (context) => QRMainScreen()));
               }),
@@ -218,16 +219,20 @@ class EthSyncNavDrawer extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => const EthSyncBarcodeScan()));
               }),
-          const ListTile(
-            leading: Icon(Icons.launch, color: Colors.greenAccent),
-            title: Text(
-              'Etherum website',
-              style: TextStyle(
-                  fontStyle: FontStyle.italic, color: Colors.greenAccent),
-            ),
-            trailing: Icon(Icons.launch, color: Colors.greenAccent),
-            onTap: EthSyncUrl.launchURLEthereum,
-          ),
+          ListTile(
+              leading: const Icon(Icons.launch, color: Colors.greenAccent),
+              title: const Text(
+                'Flutter.io website barcode scan',
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.greenAccent),
+              ),
+              trailing: const Icon(Icons.launch, color: Colors.greenAccent),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const EthSyncBarcodeScan()));
+              }),
           const ListTile(
             leading: Icon(Icons.launch, color: Colors.purpleAccent),
             title: Text(
@@ -236,7 +241,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                   fontStyle: FontStyle.italic, color: Colors.purpleAccent),
             ),
             trailing: Icon(Icons.bookmark, color: Colors.orangeAccent),
-            onTap: EthSyncUrl.launchURLEthSync,
+            onTap: EthSyncLaunchUrl.launchURLEthSync,
           ),
           ListTile(
               leading: const Icon(

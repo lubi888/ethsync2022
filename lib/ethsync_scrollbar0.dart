@@ -1,3 +1,4 @@
+import 'package:ethsync2022/ethsync_extendedimage.dart';
 import 'package:flutter/material.dart';
 import './ethsync_text.dart';
 
@@ -116,18 +117,18 @@ class Scrollbar0 extends StatelessWidget {
           //     );
           //   },
           // ),
-          Container(
+          TextButton(
             child: Image.asset(_kAsset5),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthsyncExpandImage(
-            //               image: _kAsset5,
-            //               title: "geth Terminator",
-            //             )),
-            //   );
-            // },
+            onPressed: () async {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EthSyncExtendedImage(
+                          image: _kAsset5,
+                          title: "geth Terminator",
+                        )),
+              );
+            },
           ),
           // EthSync Heading ---------------------------------------------
           Container(

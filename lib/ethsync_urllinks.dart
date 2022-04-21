@@ -14,7 +14,7 @@ import 'package:flutter_web_browser/flutter_web_browser.dart';
 //   }
 // }
 
-class EthSyncUrl {
+class EthSyncLaunchUrl {
   static void launchURLFlutter() async {
     const url = "https://flutter.io";
     if (await canLaunch(url)) {

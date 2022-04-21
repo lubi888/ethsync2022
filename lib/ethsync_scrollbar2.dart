@@ -60,14 +60,14 @@ class Scrollbar2 extends StatelessWidget {
         child: ListView(
 //                   Padding(padding: EdgeInsets.all(20.0)),
           children: <Widget>[
-            Padding(padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
+            const Padding(padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
             const Text(
               "check the net for live trades",
               textAlign: TextAlign.center,
             ),
             //blue box
             Container(
-              padding: EdgeInsets.all(100.0),
+              padding: const EdgeInsets.all(100.0),
               constraints: const BoxConstraints(
                 maxHeight: 100.0,
                 maxWidth: 200.0,
@@ -89,7 +89,7 @@ class Scrollbar2 extends StatelessWidget {
                 width: 250.0,
                 fit: BoxFit.cover,
               ),
-              onTap: EthSyncUrl.launchURLEthereum,
+              onTap: EthSyncLaunchUrl.launchURLEthereum,
             ),
 
             // Container(
@@ -104,7 +104,7 @@ class Scrollbar2 extends StatelessWidget {
             //   child: FlatButton(
             //     child: Padding(
             //         padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
-            //     onPressed: EthSyncUrl.launchURLEthereum,
+            //     onPressed: EthSyncLaunchUrl.launchURLEthereum,
             //   ),
             // ),
             //padding
@@ -118,8 +118,8 @@ class Scrollbar2 extends StatelessWidget {
                 fit: BoxFit.cover,
                 // width: 550.0,
               ),
-              // onPressed: EthSyncUrl.launchURLEthereum,
-              onTap: EthSyncUrl.launchBrowserTabKrakenEthEur,
+              // onPressed: EthSyncLaunchUrl.launchURLEthereum,
+              onTap: EthSyncLaunchUrl.launchBrowserTabKrakenEthEur,
             ),
             //2nd image has boxfit; flta button insdie container
             const Padding(padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
@@ -133,7 +133,7 @@ class Scrollbar2 extends StatelessWidget {
                 fit: BoxFit.cover,
                 // fit: Boxfit.cover,
               ),
-              onTap: EthSyncUrl.launchURLEthStackexchange,
+              onTap: EthSyncLaunchUrl.launchURLEthStackexchange,
             ),
             //padding
             const Padding(padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
@@ -146,11 +146,8 @@ class Scrollbar2 extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Container(
-                child: Padding(
-                    padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
-                // onPressed: EthSyncUrl.launchURLEthYouTube,
-              ),
+              child: const Padding(
+                  padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
             ),
             const Padding(padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
             const Text(
@@ -165,7 +162,7 @@ class Scrollbar2 extends StatelessWidget {
               color: Colors.red[100],
             ),
             const Padding(padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
-            Text(
+            const Text(
               "fx currency rates",
               textAlign: TextAlign.center,
             ),
@@ -177,7 +174,7 @@ class Scrollbar2 extends StatelessWidget {
               color: Colors.yellowAccent,
             ),
             const Padding(padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 0.0)),
-            Text(
+            const Text(
               "ERC20 Coin. I.C.O. Initial Coin Offerings",
               textAlign: TextAlign.center,
             ),
@@ -189,13 +186,10 @@ class Scrollbar2 extends StatelessWidget {
               color: Colors.green[300],
             ),
             const Padding(padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 30.0)),
-            Container(
-              child: Image.asset(
-                _kAsset0,
-                height: 300.0,
-                width: 300.0,
-              ),
-              // onPressed: () {},
+            Image.asset(
+              _kAsset0,
+              height: 300.0,
+              width: 300.0,
             ),
             // FlatButton(
             //     child: Image.network(
@@ -255,8 +249,8 @@ class Scrollbar2 extends StatelessWidget {
             // Radio<int>(value: 0, groupValue: 0, onChanged: (_) {}),
             // Switch(value: true, onChanged: (bool value) {}),
             Container(
-              // onPressed: EthSyncUrl.launchURLFlutter,
-              // onPressed: () => EthSyncUrl.launchBrowserTabKrakenEthEur,
+              // onPressed: EthSyncLaunchUrl.launchURLFlutter,
+              // onPressed: () => EthSyncLaunchUrl.launchBrowserTabKrakenEthEur,
               // onPressed: () async {
               // Navigator.push(
               // context,

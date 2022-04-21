@@ -1,8 +1,8 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
 const String ethTextFonts =
-    "\u03BB \n\tgreek lambda \n\u1688 \n\togham tinne \n\u304B \n\tjapanese ka \n\u4E07 \n\tcjk ideograph 10,000"
-    "\n\u4DC1 \n\tiching \n\u1300 \n\tethiopic symbol \n\u{13080} \n\tegyptian eye \n\u{132BD} \n\tegyptian djed \n\u{1309E} \n\tegyptian di hand arm \n\u{133D9} \n\tegyptian di \n";
+    "\u03BB \ngreek lambda \n\u1682 \nogham tinne \n\u304B \njapanese ka \n\u4E07 \ncjk ideograph 10,000"
+    "\n\u4DC1 \niching \n\u1300 \nethiopic symbol \n\u{13080} \negyptian eye \n\u{132BD} \negyptian djed \n\u{1309E} \negyptian di hand arm \n\u{133D9} \negyptian di \n";
 
 const String ethTextIntro =
     "Hello and welcome to ethereum sync. This app aims to provide the information needed to "
@@ -13,7 +13,7 @@ const String ethTextIntro =
     "\n\nPrimarily we will be doing this on the Linux and Windows operating systems but there will also "
     "be information for Mac users. Mac users will be able to follow the linux examples to achieve the same results. The file directory"
     "structures are different in the 3 Openting Systems (O.S's from now on) but the results will be the same."
-    "\n\nWhat this app will not do: \tThis app is an into into how to sync with the ethereum blochain as its important to get to know the blockchain and"
+    "\n\nWhat this app will not do: This app is an into into how to sync with the ethereum blochain as its important to get to know the blockchain and"
     "to begin to trust it through reading and interaction. To run the ethereum blockchain it is not even necessary to have "
     "an ethereum account but this app will show you how to how to do this in 3-5 mins. This app will not focus on mining, another large "
     "area of interest to cryptocurrency enthusiasts, but we will take a look at it because the basic concepts are not that difficult to grasp: serious needs for hardware, software, electricity and GPU thermal cooling"
@@ -105,7 +105,7 @@ const String ethTextMiners =
 const String textShareURL = "www.et.eu";
 
 // 20220413 text intl untranslated
-const String title = "ethSync 20220419";
+const String title = "ethSync 20220421";
 const String home = "home";
 const String code = "code";
 const String online = "online";
@@ -166,8 +166,8 @@ const String ethGoHello = ('package main\n\n'
         'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
         'fmt.Printf(\"isn\'t this exciting?!\")'
         '\n}'
-    // '\t\t\t\tfmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
-    // '\t\t\t\tfmt.Printf(\"isn\'t this exciting?!\")'
+    // 'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
+    // 'fmt.Printf(\"isn\'t this exciting?!\")'
     // '\n}'
     );
 
