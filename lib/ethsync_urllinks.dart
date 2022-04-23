@@ -63,7 +63,7 @@ class EthSyncLaunchUrl {
 //   }
 // }
   static launchURLEthSync() async {
-    const url = 'https://www.ethsync.ie';
+    const url = 'https://www.ethsync.xxx';
     if (await canLaunch(url)) {
       await launch(url);
     } else {

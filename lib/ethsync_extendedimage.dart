@@ -65,7 +65,7 @@ class EthSyncExtendedImage extends StatelessWidget {
 }
 
 printFunc() {
-  print('hello');
+  print('hello extended images');
 }
 
 // eg from extendedImage pub.dev

@@ -236,7 +236,7 @@ class EthSyncNavDrawer extends StatelessWidget {
           const ListTile(
             leading: Icon(Icons.launch, color: Colors.purpleAccent),
             title: Text(
-              'ethSync.com',
+              'ethSync.xxx',
               style: TextStyle(
                   fontStyle: FontStyle.italic, color: Colors.purpleAccent),
             ),
