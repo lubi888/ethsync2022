@@ -12,3 +12,16 @@ language implementations. intl.
 
 PoS    proof of stake
 possible timeline of implementanion
+
+tabula cerata
+waxed tablet
+
+//certea
+
+
+experimental:
+slice blockchain
+    testing mobile cpu?
+
+blockchain connect?
+vm virtual connect with servers?
