@@ -108,15 +108,15 @@ const String ethTextMiners =
 const String textShareURL = "www.et.eu";
 
 // 20220413 text intl untranslated
-const String title = "ethSync 20220421";
+const String title = "ethSync 20220505";
 const String home = "home";
 const String code = "code";
 const String online = "online";
 const String learn = "learn";
 const String danger = "dangr";
 
-const String ethEhSyncHeading = ('Ethereum Synchronisation');
-const String ethInstallGolandHeading = "Install Golang";
+const String ethEhSyncHeading = 'Ethereum Synchronisation';
+const String ethInstallGolandHeading = 'Install Golang';
 const String ethInstallGolangHeading = 'Install Go';
 const String ethGolangTestHeading = 'Testing Go Installation';
 const String ethInstallGethHeading = 'Install Geth - GoEthereum';
