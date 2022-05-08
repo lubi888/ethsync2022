@@ -40,6 +40,7 @@ dependencies:
   # permission_handler: ^9.2.0
   flutter_barcode_scanner: ^2.0.0
   extended_image: ^6.0.2+1
+  expandable_text: ^2.3.0
   # flutter_native_web: ^1.0.3
   # linkify: ^4.1.0
   # flutter_qr_scan: ^1.0.7
