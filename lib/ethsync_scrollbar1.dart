@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import './ethsync_text.dart';
-import './ethsync_urllinks.dart';
+// import './ethsync_urllinks.dart';
 import './ethsync_extendedimage.dart';
 
 class Scrollbar1 extends StatelessWidget {
@@ -62,7 +62,7 @@ class Scrollbar1 extends StatelessWidget {
               color: Colors.yellow.shade500,
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
             ),
-            child: const Text(
+            child: const SelectableText(
               // ethInstallGolangHeading,
               ethInstallGolandHeading,
               textAlign: TextAlign.center,
@@ -135,7 +135,7 @@ class Scrollbar1 extends StatelessWidget {
             ),
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethCheckGoHelp,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -180,7 +180,7 @@ class Scrollbar1 extends StatelessWidget {
             },
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethCheckGoEnv,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -209,7 +209,7 @@ class Scrollbar1 extends StatelessWidget {
             },
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethCheckGoPath3Folders,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -246,7 +246,7 @@ class Scrollbar1 extends StatelessWidget {
               color: Colors.yellow.shade500,
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
             ),
-            child: const Text(
+            child: const SelectableText(
               ethGolangTestHeading,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -257,7 +257,7 @@ class Scrollbar1 extends StatelessWidget {
             ),
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGoTestYourInstallation,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -268,7 +268,7 @@ class Scrollbar1 extends StatelessWidget {
             ),
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGoHello,
               textAlign: TextAlign.left,
               style: TextStyle(
@@ -297,7 +297,7 @@ class Scrollbar1 extends StatelessWidget {
           ),
           //container-intl-linkify
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGoBuild,
               textAlign: TextAlign.left,
               style: TextStyle(
@@ -387,7 +387,7 @@ class Scrollbar1 extends StatelessWidget {
               color: Colors.yellow.shade500,
               borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             ),
-            child: const Text(
+            child: const SelectableText(
               ethInstallGethHeading,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -499,7 +499,7 @@ class Scrollbar1 extends StatelessWidget {
             // onPressed: EthSyncUrl.launchURLGethWebInstall,
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGethWebsiteManyImplementations,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -546,7 +546,7 @@ class Scrollbar1 extends StatelessWidget {
             },
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGethVersion,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -557,7 +557,7 @@ class Scrollbar1 extends StatelessWidget {
             ),
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethWhichGethList,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -585,7 +585,7 @@ class Scrollbar1 extends StatelessWidget {
             },
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGethHelp,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -707,7 +707,7 @@ class Scrollbar1 extends StatelessWidget {
               color: Colors.yellow.shade500,
               borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             ),
-            child: const Text(
+            child: const SelectableText(
               ethGethWebsite,
               // ethGethRunHeading,
               textAlign: TextAlign.center,
@@ -719,7 +719,7 @@ class Scrollbar1 extends StatelessWidget {
             ),
           ),
           // Container(
-          //   child: const Text(
+          //   child: const SelectableText(
           //     ethGethCommandHelp,
           //     textAlign: TextAlign.center,
           //     style: TextStyle(
@@ -749,7 +749,7 @@ class Scrollbar1 extends StatelessWidget {
             ),
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGethSyncmodeLight,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -777,7 +777,7 @@ class Scrollbar1 extends StatelessWidget {
             },
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGethBlockchainSyncing,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -805,7 +805,7 @@ class Scrollbar1 extends StatelessWidget {
             },
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGethSyncingCompletedDisconnected,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -833,7 +833,7 @@ class Scrollbar1 extends StatelessWidget {
             },
           ),
           Container(
-            child: const Text(
+            child: const SelectableText(
               ethGethBlockchainLocation,
               textAlign: TextAlign.center,
               style: TextStyle(

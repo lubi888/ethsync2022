@@ -89,7 +89,7 @@ class Scrollbar3 extends StatelessWidget {
               color: Colors.yellow.shade500,
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
             ),
-            child: const Text(
+            child: const SelectableText(
               // ethInstallGolangHeading,
               ethInstallGolandHeading,
               textAlign: TextAlign.center,

@@ -12,7 +12,7 @@ class Scrollbar4 extends StatelessWidget {
       child: Container(
         child: ListView(
           children: <Widget>[
-            const Text(
+            const SelectableText(
               "fonts",
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -20,7 +20,7 @@ class Scrollbar4 extends StatelessWidget {
                 fontSize: 40.0,
               ),
             ),
-            Text(
+            SelectableText(
               ethTextFonts,
               textAlign: TextAlign.center,
               style: TextStyle(

@@ -52,7 +52,7 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
         centerTitle: true,
         // centerTitle: false,
         // title: const Text("ethsync2022.04.13"),
-        title: const Text(title),
+        title: const SelectableText(title),
         bottom: TabBar(tabs: [
           const Tab(
               child: Align(
@@ -85,7 +85,7 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
           Tab(
               child: const Align(
                 alignment: Alignment.center,
-                child: Text(danger),
+                child: SelectableText(danger),
                 //  \nexperimental software
               ),
               icon: Icon(Icons.dangerous, color: Colors.red[200])),

@@ -108,7 +108,7 @@ const String ethTextMiners =
 const String textShareURL = "www.et.eu";
 
 // 20220413 text intl untranslated
-const String title = "ethSync 20220505";
+const String title = "ethSync 20220508";
 const String home = "home";
 const String code = "code";
 const String online = "online";
