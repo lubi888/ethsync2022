@@ -3,6 +3,23 @@
 
 // Could not find a set of Noto fonts to display all missing characters. Please add a font asset for the missing characters. See:
 // https://flutter.dev/docs/cookbook/design/fonts
+
+// 20220413 text intl untranslated
+const String title = "ethSync 20220516";
+const String home = "home";
+const String code = "code";
+const String online = "online";
+const String learn = "learn";
+const String danger = "dangr";
+
+const String ethEhSyncHeading = 'Ethereum Synchronisation';
+const String ethInstallGolandHeading = 'Install Golang';
+const String ethInstallGolangHeading = 'Install Go';
+const String ethGolangTestHeading = 'Testing Go Installation';
+const String ethInstallGethHeading = 'Install Geth - GoEthereum';
+
+const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
+
 const String ethTextFonts =
     "\u03BB \ngreek lambda \n\u1688 \nogham tinne \n\u304B \njapanese ka \n\u4E07 \ncjk ideograph 10,000"
     "\n\u4DC1 \niching \n\u1300 \nethiopic symbol \n\u{13080} \negyptian eye \n\u{132BD} \negyptian djed \n\u{1309E} \negyptian di hand arm \n\u{133D9} \negyptian di \n";
@@ -106,22 +123,6 @@ const String ethTextMiners =
     "\n\n";
 
 const String textShareURL = "www.et.eu";
-
-// 20220413 text intl untranslated
-const String title = "ethSync 20220508";
-const String home = "home";
-const String code = "code";
-const String online = "online";
-const String learn = "learn";
-const String danger = "dangr";
-
-const String ethEhSyncHeading = 'Ethereum Synchronisation';
-const String ethInstallGolandHeading = 'Install Golang';
-const String ethInstallGolangHeading = 'Install Go';
-const String ethGolangTestHeading = 'Testing Go Installation';
-const String ethInstallGethHeading = 'Install Geth - GoEthereum';
-
-const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 
 const String ethEthSyncPrimaryGoal =
     ('1, The primary goal of this mobile app is to educate the reader about the ethereum blockchain in general and to also learn of one of the easiest ways to synchronise with it.\n\n'

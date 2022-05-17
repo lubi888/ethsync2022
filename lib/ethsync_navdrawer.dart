@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 // import './ethsync_text.dart';
 import './ethsync_urllinks.dart';
-import './ethsync_walletdrawer.dart';
+// import './ethsync_walletdrawer.dart';
 import './ethsync_barcodescanner.dart';
 // import './ethsync_extendedimage.dart';
 // import './ethsync_scrollbar0.dart';
 // import './ethsync_scrollbar1.dart';
-// import './ethsync_scrollbar2.dart';
+import './ethsync_scrollbar2.dart';
 // import './ethsync_scrollbar3.dart';
 // import './ethsync_scrollbar4.dart';
 
@@ -54,7 +54,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
+                        builder: (context) => const Scrollbar2()));
               }),
           ListTile(
               leading: const Icon(
@@ -76,7 +76,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
+                        builder: (context) => const Scrollbar2()));
                 // context, MaterialPageRoute(builder: (context) => Pesto()));
                 // context, MaterialPageRoute(builder: (context) => Pesto()));
               }),
@@ -99,7 +99,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
+                        builder: (context) => const Scrollbar2()));
               }),
           ListTile(
               // leading:
@@ -125,7 +125,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
+                        builder: (context) => const Scrollbar2()));
                 // MaterialPageRoute(builder: (context) => FirebaseBaby()));
               }),
           ListTile(
@@ -148,7 +148,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const EthSyncWalletDrawer()),
+                      builder: (context) => const Scrollbar2()),
                   // MaterialPageRoute(builder: (context) => GridListDemo()),
                 );
               }),
@@ -171,7 +171,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
+                        builder: (context) => const Scrollbar2()));
                 // builder: (context) => TextFormFieldDemo()));
               }),
           ListTile(
@@ -236,66 +236,66 @@ class EthSyncNavDrawer extends StatelessWidget {
           const ListTile(
             leading: Icon(Icons.launch, color: Colors.purpleAccent),
             title: Text(
-              'ethSync.xxx',
+              'ethSync.xyz',
               style: TextStyle(
                   fontStyle: FontStyle.italic, color: Colors.purpleAccent),
             ),
             trailing: Icon(Icons.bookmark, color: Colors.orangeAccent),
             onTap: EthSyncLaunchUrl.launchURLEthSync,
           ),
-          ListTile(
-              leading: const Icon(
-                Icons.android,
-                color: Colors.indigoAccent,
-              ),
-              title: const Text(
-                '1st page --------',
-                style: TextStyle(color: Colors.yellowAccent),
-              ),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
-                // MaterialPageRoute(builder: (context) => FirstScreen()));
-              }),
-          ListTile(
-              leading: const Icon(
-                Icons.laptop_windows,
-                color: Colors.pinkAccent,
-              ),
-              title: const Text(
-                '2nd page ----------',
-                style: TextStyle(color: Colors.tealAccent),
-              ),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
-                // MaterialPageRoute(builder: (context) => SecondScreen()));
-              }),
+          // ListTile(
+          //     leading: const Icon(
+          //       Icons.android,
+          //       color: Colors.indigoAccent,
+          //     ),
+          //     title: const Text(
+          //       '1st page --------',
+          //       style: TextStyle(color: Colors.yellowAccent),
+          //     ),
+          //     onTap: () {
+          //       Navigator.push(
+          //           context,
+          //           MaterialPageRoute(
+          //               builder: (context) => const Scrollbar2()));
+          //       // MaterialPageRoute(builder: (context) => FirstScreen()));
+          //     }),
+          // ListTile(
+          //     leading: const Icon(
+          //       Icons.laptop_windows,
+          //       color: Colors.pinkAccent,
+          //     ),
+          //     title: const Text(
+          //       '2nd page ----------',
+          //       style: TextStyle(color: Colors.tealAccent),
+          //     ),
+          //     onTap: () {
+          //       Navigator.push(
+          //           context,
+          //           MaterialPageRoute(
+          //               builder: (context) => const Scrollbar2()));
+          //       // MaterialPageRoute(builder: (context) => SecondScreen()));
+          //     }),
 
-          ListTile(
-              leading: const Icon(
-                Icons.laptop_windows,
-                color: Colors.tealAccent,
-              ),
-              trailing: const Icon(
-                Icons.sync_disabled,
-                color: Colors.tealAccent,
-              ),
-              title: const Text(
-                'snackbar page',
-                style: TextStyle(color: Colors.tealAccent),
-              ),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const EthSyncWalletDrawer()));
-                // MaterialPageRoute(builder: (context) => SnackBarPage()));
-              }),
+          // ListTile(
+          //     leading: const Icon(
+          //       Icons.laptop_windows,
+          //       color: Colors.tealAccent,
+          //     ),
+          //     trailing: const Icon(
+          //       Icons.sync_disabled,
+          //       color: Colors.tealAccent,
+          //     ),
+          //     title: const Text(
+          //       'snackbar page',
+          //       style: TextStyle(color: Colors.tealAccent),
+          //     ),
+          //     onTap: () {
+          //       Navigator.push(
+          //           context,
+          //           MaterialPageRoute(
+          //               builder: (context) => const Scrollbar2()));
+          //       // MaterialPageRoute(builder: (context) => SnackBarPage()));
+          //     }),
           ListTile(
               leading: const Icon(
                 Icons.accessibility,
@@ -313,7 +313,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const EthSyncWalletDrawer()),
+                      builder: (context) => const Scrollbar2()),
                   // MaterialPageRoute(builder: (context) => EthSyncShare()),
                 );
               }),
@@ -360,7 +360,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const EthSyncWalletDrawer(
+                      builder: (context) => const Scrollbar2(
                           // assetFile: _kAsset0,
                           //  String imageUrsl, heroTag, title;
                           //  imageUrl = "www.yahoo.com",
