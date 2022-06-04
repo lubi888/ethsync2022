@@ -55,7 +55,7 @@ class EthSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
         title: const SelectableText(title),
         bottom: TabBar(tabs: [
           const Tab(
-              child: Align(
+              child: Align( 
                 alignment: Alignment.center,
                 child: Text(home),
               ),
