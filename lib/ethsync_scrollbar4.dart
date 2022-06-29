@@ -14,7 +14,7 @@ class Scrollbar4 extends StatelessWidget {
           children: <Widget>[
             const SelectableText(
               "fonts",
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.right,
               style: TextStyle(
                 color: Colors.green,
                 fontSize: 40.0,
@@ -22,7 +22,7 @@ class Scrollbar4 extends StatelessWidget {
             ),
             SelectableText(
               ethTextFonts,
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.right,
               style: TextStyle(
                 fontSize: 25.0,
                 color: Colors.redAccent.shade200,
