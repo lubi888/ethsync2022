@@ -120,6 +120,27 @@ class Scrollbar3 extends StatelessWidget {
                 fontSize: 20.0,
               ),
             ),
+          ),
+          Container(
+            child: Linkify(
+              onOpen: (link) async {
+                if (await canLaunch(link.url)) {
+                  await launch(link.url);
+                } else {
+                  throw 'Could not launch $link';
+                }
+              },
+              // humanize: true,
+              text:
+                  ethInstallGolandGoGetWebsite, //mist browser & dapp interface
+              // ethInstallGolangGoGetWebsite,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
           )
         ],
       ),

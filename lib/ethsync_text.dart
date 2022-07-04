@@ -5,7 +5,7 @@
 // https://flutter.dev/docs/cookbook/design/fonts
 
 // 20220413 text intl untranslated
-const String title = "ethSync 20220629";
+const String title = "ethSync 20220704";
 const String home = "home";
 const String code = "code";
 const String online = "online";
@@ -170,7 +170,6 @@ const String ethGoHello = ('package main\n\n'
         'import \"fmt\"\n\n'
         'func main() {\n'
         'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
-        'fmt.Printf(\"isn\'t this exciting?!\")'
         '\n}'
     // 'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
     // 'fmt.Printf(\"isn\'t this exciting?!\")'
