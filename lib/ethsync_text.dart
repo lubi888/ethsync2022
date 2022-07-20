@@ -5,7 +5,7 @@
 // https://flutter.dev/docs/cookbook/design/fonts
 
 // 20220413 text intl untranslated
-const String title = "ethSync 202207015";
+const String title = "ethSync 202207020 pixel 4a";
 const String home = "home";
 const String code = "code";
 const String online = "online";
