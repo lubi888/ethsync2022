@@ -1,5 +1,7 @@
 // import 'package:flutter/material.dart';
 // import 'package:async/async.dart';
+import 'dart:html';
+
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_web_browser/flutter_web_browser.dart';
 // import 'package:flutter_web_browser/flutter_web_browser.dart';
@@ -152,6 +154,15 @@ class EthSyncLaunchUrl {
 
   static void launchURLGethWebInstall() async {
     const url = "https://geth.ethereum.org/install-and-build/Installing-Geth";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  static launchURLEtherscanIoChartPrice() async {
+    const url = "https://etherscan.io/chart/etherprice";
     if (await canLaunch(url)) {
       await launch(url);
     } else {

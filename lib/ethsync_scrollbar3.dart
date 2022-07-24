@@ -131,11 +131,11 @@ class Scrollbar3 extends StatelessWidget {
                 }
               },
               // humanize: true,
-              text: ethInstallContract, //mist browser & dapp interface
+              text: ethEtherscanIOPrice, //mist browser & dapp interface
               // ethInstallGolangGoGetWebsite,
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.right,
               style: const TextStyle(
-                color: Colors.red,
+                color: Colors.green,
                 fontStyle: FontStyle.italic,
                 fontSize: 20.0,
               ),

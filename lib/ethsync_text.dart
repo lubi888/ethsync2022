@@ -5,7 +5,7 @@
 // https://flutter.dev/docs/cookbook/design/fonts
 
 // 20220413 text intl untranslated
-const String title = "ethSync 202207020 pixel 4a";
+const String title = "ethSync 202207024 pixel 4a";
 const String home = "home";
 const String code = "code";
 const String online = "online";
@@ -20,6 +20,7 @@ const String ethInstallGethHeading = 'Install Geth - GoEthereum';
 const String ethInstallContract = "dapp readmin\\ndifi decentri phi";
 
 const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
+const String ethEtherscanIOPrice = "https://etherscan.io/chart/etherprice";
 
 const String ethTextFonts =
     "\u03BB \ngreek lambda \n\u1688 \nogham tinne \n\u304B \njapanese ka \n\u4E07 \ncjk ideograph 10,000"
