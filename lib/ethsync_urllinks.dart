@@ -4,17 +4,14 @@
 
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_web_browser/flutter_web_browser.dart';
-// import 'package:flutter_web_browser/flutter_web_browser.dart';
 
-// get actual links
-// void _launchURLFlutter() async {
-//   const url = "https://flutter.io";
-//   if (await canLaunch(url)) {
-//       await launch(url);
-//   } else {
-//       throw 'Could not launch $url';
-//   }
-// }
+final Uri _url = Uri.parse('https://flutter.dev');
+
+Future<void> _launchUrl() async {
+  if (!await launchUrl(_url)) {
+    throw "could not luanch $_url";
+  }
+}
 
 class EthSyncLaunchUrl {
   static void launchURLFlutter() async {

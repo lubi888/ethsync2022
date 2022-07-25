@@ -25,7 +25,7 @@ class Scrollbar4 extends StatelessWidget {
               textAlign: TextAlign.left,
               style: TextStyle(
                 fontSize: 45.0,
-                color: Colors.greenAccent.shade200,
+                color: Colors.greenAccent.shade100,
               ),
             ),
           ],

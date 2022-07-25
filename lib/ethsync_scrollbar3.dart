@@ -5,6 +5,21 @@ import 'package:url_launcher/url_launcher.dart';
 import './ethsync_text.dart';
 // import './ethsync_urllinks.dart';
 
+final Uri _url = Uri.parse('https://flutter.dev');
+final Uri _launchUrlEtherscanPrice =
+    Uri.parse('https://etherscan.io/chart/etherprice');
+
+Future<void> _launchUrl() async {
+  if (!await launchUrl(_url)) {
+    throw "could not luanch $_url";
+  }
+}
+
+Future<void> _ethUriEtherscanPrice() async {
+  if (!await launchUrl(_launchUrlEtherscanPrice)) {
+    throw "could not launch $_launchUrlEtherscanPrice";
+  }
+}
 // import 'package:flutter/material.dart';
 // import 'package:flutter_native_web/flutter_native_web.dart';
 // import 'package:flutter/gestures.dart';
@@ -142,6 +157,18 @@ class Scrollbar3 extends StatelessWidget {
               ),
             ),
           ),
+          // Container(
+          const Center(
+              child: ElevatedButton(
+            onPressed: _launchUrl,
+            child: Text("launch url flutter.dev"),
+          )),
+          const Center(
+            child: ElevatedButton(
+                onPressed: _ethUriEtherscanPrice,
+                child: Text("luanch etherscan.io/charts/price")),
+          )
+          // )
           // ElevatedButton(
           // onPressed: (),
           //   // =>
