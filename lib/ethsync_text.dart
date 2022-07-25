@@ -5,7 +5,7 @@
 // https://flutter.dev/docs/cookbook/design/fonts
 
 // 20220413 text intl untranslated
-const String title = "ethSync 202207024 pixel 4a";
+const String title = "ethSync 20220725 pixel 4a";
 const String home = "home";
 const String code = "code";
 const String online = "online";
@@ -17,7 +17,8 @@ const String ethInstallGolandHeading = 'Install Golang';
 // const String ethInstallGolangHeading = 'Install Go';
 const String ethGolangTestHeading = 'Testing Go Installation';
 const String ethInstallGethHeading = 'Install Geth - GoEthereum';
-const String ethInstallContract = "dapp readmin\\ndifi decentri phi";
+const String ethInstallContract =
+    "dapp readmin\\ndifi decentri phi  \\nhow to end and ethereum smart contract etc";
 
 const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 const String ethEtherscanIOPrice = "https://etherscan.io/chart/etherprice";

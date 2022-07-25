@@ -22,10 +22,10 @@ class Scrollbar4 extends StatelessWidget {
             ),
             SelectableText(
               ethTextFonts,
-              textAlign: TextAlign.right,
+              textAlign: TextAlign.left,
               style: TextStyle(
-                fontSize: 25.0,
-                color: Colors.redAccent.shade200,
+                fontSize: 45.0,
+                color: Colors.greenAccent.shade200,
               ),
             ),
           ],

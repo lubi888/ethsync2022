@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -140,7 +141,32 @@ class Scrollbar3 extends StatelessWidget {
                 fontSize: 20.0,
               ),
             ),
-          )
+          ),
+          // ElevatedButton(
+          // onPressed: (),
+          //   // =>
+          //   // setState(() {
+          //     // _launched = _launchInBrowser(toLaunch);
+          //     Future<void> _launchInBrowser(Uri url) async {
+          //       if (!await launchUrl(
+          //         url,
+          //         mode: LaunchMode.externalApplication,
+          //       )) {
+          //         throw 'Could not launch $url';
+          //       }
+          //     }
+          // )
+          //   }),
+          //   child: const Text('Launch in browser'),
+          // 3
+          // const Padding(padding: EdgeInsets.all(16.0)),
+          // ElevatedButton(
+          //   onPressed: () => setState(() {
+          //     _launched = _launchInWebViewOrVC(toLaunch);
+          //   }),
+          //   child: const Text('Launch in app'),
+          // ),
+          // )
         ],
       ),
     );
