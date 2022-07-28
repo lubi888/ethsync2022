@@ -25,7 +25,7 @@ class EthSync extends StatelessWidget {
             appBar: EthSyncAppBar(),
             drawer: EthSyncNavDrawer(),
             body: EthSyncHome(),
-            ),
+          ),
         ));
   }
 }

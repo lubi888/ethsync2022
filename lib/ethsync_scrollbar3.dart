@@ -8,6 +8,8 @@ import './ethsync_text.dart';
 final Uri _url = Uri.parse('https://flutter.dev');
 final Uri _launchUrlEtherscanPrice =
     Uri.parse('https://etherscan.io/chart/etherprice');
+final Uri _launchLightChainSync =
+    Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
 
 Future<void> _launchUrl() async {
   if (!await launchUrl(_url)) {
@@ -18,6 +20,12 @@ Future<void> _launchUrl() async {
 Future<void> _ethUriEtherscanPrice() async {
   if (!await launchUrl(_launchUrlEtherscanPrice)) {
     throw "could not launch $_launchUrlEtherscanPrice";
+  }
+}
+
+Future<void> _ethLightChainSync() async {
+  if (!await launchUrl(_launchLightChainSync)) {
+    throw "could not launch $_ethLightChainSync";
   }
 }
 // import 'package:flutter/material.dart';
@@ -167,6 +175,13 @@ class Scrollbar3 extends StatelessWidget {
             child: ElevatedButton(
                 onPressed: _ethUriEtherscanPrice,
                 child: Text("luanch etherscan.io/charts/price")),
+          ),
+          const Center(
+            child: ElevatedButton(
+                onPressed: _ethLightChainSync,
+                child: Text('launch ether light chain sync')),
+            // print that external link has been activated & client left.
+            // print('scrollbar3 elevatedButton pressed');
           )
           // )
           // ElevatedButton(
@@ -182,17 +197,6 @@ class Scrollbar3 extends StatelessWidget {
           //         throw 'Could not launch $url';
           //       }
           //     }
-          // )
-          //   }),
-          //   child: const Text('Launch in browser'),
-          // 3
-          // const Padding(padding: EdgeInsets.all(16.0)),
-          // ElevatedButton(
-          //   onPressed: () => setState(() {
-          //     _launched = _launchInWebViewOrVC(toLaunch);
-          //   }),
-          //   child: const Text('Launch in app'),
-          // ),
           // )
         ],
       ),

@@ -6,6 +6,9 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_web_browser/flutter_web_browser.dart';
 
 final Uri _url = Uri.parse('https://flutter.dev');
+final Uri _urlEthereumOrgLightChain = Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
+
+// https://ethereum.org/en/developers/docs/nodes-and-clients/
 
 Future<void> _launchUrl() async {
   if (!await launchUrl(_url)) {
