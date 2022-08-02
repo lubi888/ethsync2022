@@ -197,8 +197,8 @@ const String ethGethWebsite =
 
 const String ethGethWebsite3Implementations = ('\nNotice from the website:\n'
     '\"Go Ethereum is one of the three original implementations (along with C++ and Python) of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3.\"\n'
-    '\nThe reason this author finds the go implementation of ether the best is because golang https://en.wikipedia.org/wiki/Go_(programming_language) is more modern programming language than Python and C++. Go was written by Ken Thompson, Rob Pike and Robert Griesemer with concurrency https://talks.golang.org/2012/concurrency.slide#1 built in.\n'
-    '\nThis matters a lot because the blockchain is changing continually all over the world concurrently.');
+    '\nThe reason this author finds the go implementation of ether the best is because golang https://en.wikipedia.org/wiki/Go_(programming_language) is more modern programming language than Python and C++. Go was written by Ken Thompson, Rob Pike and Robert Griesemer with concurrency https://talks.golang.org/2012/concurrency.slide#1 built in.'
+    'This matters a lot because the blockchain is changing continually all over the world concurrently.');
 
 const String ethGethWebsiteInstall =
     ('Visit https://eth.ethereum.org/downloads and choose an Operating System download.');
@@ -228,8 +228,24 @@ const String ethGethHelp =
     ('Now we must check that Geth has been installed and runs correctly. Type in the following command:\n'
         '\'eth help\'');
 
+// ethGethSyncmodeLightIntroduction,
+// ethBlockchainMassDifferentiation,
+const String ethBlockchainMassDifferentiation =
+    ('\nIts important to find out the current size of the Ethereum Blockchain and to know where to find these figures.'
+        '\nThere are a number of variables that need to calculated before connecting to the full and complete Eth chain.'
+        '\n(1)First is the blockchain sum mass.'
+        '\n(2)Second is personal computer capabilities; CPU|GPU processing unit efficiency, PC storage space, storage format type.'
+        '\n(3)Third is internet comms; internet connection stability, connection speed '
+        '\nNote that the requirements for syncing with the blkchn and mining are different. Think of hardware specks that pc gamers are always thinking about; clocking speeds, graphics cards, sufficient temperature cooling and control, ping rates, etc. Think of GPU graphics card replacing CPU central processing unit.');
+
+const String ethGethSyncmodeLightIntroduction =
+    ('Thankfully, there have been some advances since the original introducion of the ethbkc in 2015 and one has been the recognition by the programmers and community to have variable sizes on the master chain on offer while retaining main chain operability and interactivity'
+        '\n'
+        '\nInstead of using the full syncmode we are going to choose the light version'
+        '\n\'--syncmode full\' is replaced with \'--syncmode light\'');
+
 const String ethGethSyncmodeLight =
-    ('Now we are going to pull everything toether and we are going to start to download the bloackchain using p2p, peer to peer, with the following command:\n'
+    ('\nNow we are going to pull everything toether and we are going to start to download the bloackchain using p2p, peer to peer, with the following command:\n'
         '\'eth --syncmode light --cache=2048\'\n');
 
 const String ethGethBlockchainSyncing =

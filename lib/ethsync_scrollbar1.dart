@@ -750,6 +750,28 @@ class Scrollbar1 extends StatelessWidget {
           ),
           Container(
             child: const SelectableText(
+              ethBlockchainMassDifferentiation,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: const SelectableText(
+              ethGethSyncmodeLightIntroduction,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          Container(
+            child: const SelectableText(
               ethGethSyncmodeLight,
               textAlign: TextAlign.center,
               style: TextStyle(
