@@ -46,9 +46,28 @@ class Scrollbar1 extends StatelessWidget {
 
   // final String url = 'https://media.giphy.com/media/1MH245qhEF5bG/giphy.gif';
 
+  // final Uri _launchLightChainSync =
+  //     Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
+
+  // Future<void> _ethLightChainSync() async {
+  //   if (!await launchUrl(_launchLightChainSync)) {
+  //     throw "could not launch $_ethLightChainSync";
+  //   }
+
   @override
   Widget build(BuildContext context) {
     print('scrollbar1 loaded');
+
+    // void _ethLightChainSync() async {
+    //   if (!await launchUrl(_launchLightChainSync)) {
+    //     throw "could not launch $_ethLightChainSync";
+    //   }
+    // }
+
+    // Future<void> _ethLightChainSync() async {
+    //   if (!await launchUrl(_launchLightChainSync)) {
+    //     throw "could not launch $_ethLightChainSync";
+    //   }
 
     return Scrollbar(
       child: ListView(
@@ -770,6 +789,13 @@ class Scrollbar1 extends StatelessWidget {
               ),
             ),
           ),
+          Center(
+            child: ElevatedButton(
+                onPressed: _ethLightChainSync,
+                child: const Text('launch ether light chain sync')),
+            // print that external link has been activated & client left.
+            // print('scrollbar3 elevatedButton pressed');
+          ),
           Container(
             child: const SelectableText(
               ethGethSyncmodeLight,
@@ -897,3 +923,12 @@ class Scrollbar1 extends StatelessWidget {
     );
   }
 }
+
+Future<void> _ethLightChainSync() async {
+  if (!await launchUrl(_launchLightChainSync)) {
+    throw "could not launch $_ethLightChainSync";
+  }
+}
+
+final Uri _launchLightChainSync =
+    Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');

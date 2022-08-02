@@ -13,12 +13,12 @@ class EthSyncHome extends StatelessWidget {
   Widget build(BuildContext context) {
     print('EthSyncHomePage loaded');
 
-    return const TabBarView(children: [
-      Scrollbar0(),
+    return TabBarView(children: [
+      const Scrollbar0(),
       Scrollbar1(),
-      Scrollbar2(),
-      Scrollbar3(),
-      Scrollbar4(),
+      const Scrollbar2(),
+      const Scrollbar3(),
+      const Scrollbar4(),
     ]);
   }
 }
