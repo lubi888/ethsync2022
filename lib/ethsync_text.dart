@@ -5,7 +5,7 @@
 // https://flutter.dev/docs/cookbook/design/fonts
 
 // 20220413 text intl untranslated
-const String title = "ethSync.dev 20220802 pixel 4a";
+const String title = "ethSync.dev 220812 pixel 4a";
 const String home = "home";
 const String code = "code";
 const String online = "online";
@@ -89,6 +89,7 @@ const String ethTextTop5 =
     "\n\nHere we have the top 5-8 apps, websites and companies to browse and install:"
     "\n\nWallets - Online "
     "\n\nhttps://www.myetherwallet.com"
+    "\n\nhttps://www.metamask.com"
     "\n\nWallets - Standalone "
     "\n\nWallets - Cold Storage "
     "\n\nExchanges - USA, EU, JP"

@@ -6,6 +6,24 @@ import './ethsync_text.dart';
 // import './ethsync_urllinks.dart';
 import './ethsync_extendedimage.dart';
 
+final Uri _launchUrlEtherscanPrice =
+    Uri.parse('https://etherscan.io/chart/etherprice');
+
+// final Uri _launchLightChainSync =
+//     Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
+
+// Future<void> _launchUrl() async {
+//   if (!await launchUrl(_url)) {
+//     throw "could not luanch $_url";
+//   }
+// }
+
+Future<void> _ethUriEtherscanPrice() async {
+  if (!await launchUrl(_launchUrlEtherscanPrice)) {
+    throw "could not launch $_launchUrlEtherscanPrice";
+  }
+}
+
 class Scrollbar1 extends StatelessWidget {
   const Scrollbar1({Key? key}) : super(key: key);
 
@@ -79,7 +97,7 @@ class Scrollbar1 extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.yellow.shade500,
-              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             ),
             child: const SelectableText(
               // ethInstallGolangHeading,
@@ -112,6 +130,11 @@ class Scrollbar1 extends StatelessWidget {
                 fontSize: 20.0,
               ),
             ),
+          ),
+          const Center(
+            child: ElevatedButton(
+                onPressed: _ethUriEtherscanPrice,
+                child: Text("luanch etherscan.io/charts/price")),
           ),
           // Container(
           Container(
@@ -917,6 +940,11 @@ class Scrollbar1 extends StatelessWidget {
                 image: AssetImage(_kAssets27),
               ),
             ),
+          ),
+          const Center(
+            child: ElevatedButton(
+                onPressed: _ethUriEtherscanPrice,
+                child: Text("luanch etherscan.io/charts/price")),
           ),
         ],
       ),

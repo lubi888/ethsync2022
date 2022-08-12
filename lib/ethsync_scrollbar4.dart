@@ -28,6 +28,19 @@ class Scrollbar4 extends StatelessWidget {
                 color: Colors.redAccent,
               ),
             ),
+            //the contract is returned to the author of smart code eth
+            SelectableText(
+              "cancel ethereum contract. \n"
+              "command codes for ending ethereum smart contracts.\n"
+              "autofocus contract creators && include metamask etherscan,\n"
+              "\ncontract dismemberment resources returned bkchn blockchain"
+              "\ncontract returned author", //the contract is returned to the author of smart code eth
+              textAlign: TextAlign.right,
+              style: TextStyle(
+                color: Colors.redAccent,
+                fontSize: 50.0,
+              ),
+            ),
           ],
         ),
         padding: const EdgeInsets.all(10.0),
