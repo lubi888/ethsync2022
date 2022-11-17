@@ -5,7 +5,7 @@
 // https://flutter.dev/docs/cookbook/design/fonts
 
 // 20220413 text intl untranslated
-const String title = "ethSync.dev 20220802 pixel 4a";
+const String title = "ethSync.dev 221117 pixel 4a";
 const String home = "home";
 const String code = "code";
 const String online = "online";
@@ -260,6 +260,7 @@ const String ethGethSyncingCompletedDisconnected =
 const String ethGethBlockchainLocation =
     ('Notice that the  address of the blockchain is listed in the last line. Here it is \'C:Users\\iveagh-win10\\AppData\\Roaming\\Ethereum\\eth\\lightchaindata\'\n'
         'Change to this address and in the ethereum do a right-click to find the properties of the folder. This will give you the size of the bloackchain is taking up on your system.\n');
-const String ethUrlEthereumOrg = ('https://www.ethereum.org');
+const String ethUrlEthereumOrg =
+    ('https://www.ethereum.org \https://www.golang.org');
 
 const String ethImgTermGreen = ('1st green terminal page try turning page');

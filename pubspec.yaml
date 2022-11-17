@@ -74,61 +74,58 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/
-    - assets/ethBullet.png
-   - assets/etcBullet.png
-   - assets/duIcon.png
-   - assets/wallpaper-homestead.jpg
-   - assets/ethSync.jpg
-   - assets/logo.png
-   - assets/ethGreenHelp.png
-   - assets/logoHyg.png
-   - assets/logoCli.png
-   - assets/gethTerm.png
-   - assets/devcon1.png
-   - assets/etceth-asia.jpg
-   - assets/bleachBitSwap.png
-   - assets/geth1win.png
-   - assets/geth2win.png
-   - assets/kraken-eth-eur.png
-   - assets/ethStackExchange.png
-   - assets/ethereum_Web_Xi.png
-   - assets/ethereum_youtube.png
-   - assets/loading.gif
-   - assets/yanetSwimsuit.gif
-   - assets/USStates.svg
-   - assets/go-download-website.png
-   - assets/footer-gopher.jpg
-   - assets/go-env.png
-   - assets/go-3-folders.png
-   - assets/go-hello.png
-   - assets/go-build-install.png
-   - assets/geth-web.png
-   - assets/gethdl-os.png
-   - assets/geth-install-help.png
-   - assets/geth-command-help.png
-   - assets/go-help-1.png
-   - assets/go-help-2.png
-   - assets/go-build-run-local.png
-   - assets/go-install-systemwide.png
-   - assets/github-go-ethereum-list.png
-   - assets/which-geth-list.png
-   - assets/geth-help-1.png
-   - assets/geth-help-2.png
-   - assets/geth-help-3.png
-   - assets/geth-help-4.png
-   - assets/geth-help-5.png
-   - assets/geth-help-6.png
-   - assets/geth-syncmode-begin.png
-   - assets/geth-blockchain-p2p.png
-   - assets/ethsync-complete-closed.png
-   - assets/blockchain-size.png
-    # - assets/images/go-download-website.png
-    # - assets/images/go-env.png
+    - assets/images/ethBullet.png
+    - assets/images/etcBullet.png
+    - assets/images/duIcon.png
+    - assets/images/wallpaper-homestead.jpg
+    - assets/images/ethSync.jpg
+    - assets/images/logo.png
+    - assets/images/ethGreenHelp.png
+    - assets/images/logoHyg.png
+    - assets/images/logoCli.png
+    - assets/images/gethTerm.png
+    - assets/images/devcon1.png
+    - assets/images/etceth-asia.jpg
+    - assets/images/bleachBitSwap.png
+    - assets/images/geth1win.png
+    - assets/images/geth2win.png
+    - assets/images/kraken-eth-eur.png
+    - assets/images/ethStackExchange.png
+    - assets/images/ethereum_Web_Xi.png
+    - assets/images/ethereum_youtube.png
+    - assets/images/loading.gif
+    - assets/images/go-download-website.png
+    - assets/images/footer-gopher.jpg
+    - assets/images/go-env.png
+    - assets/images/go-3-folders.png
+    - assets/images/go-hello.png
+    - assets/images/go-build-install.png
+    - assets/images/geth-web.png
+    - assets/images/gethdl-os.png
+    - assets/images/geth-install-help.png
+    - assets/images/geth-command-help.png
+    - assets/images/go-help-1.png
+    - assets/images/go-help-2.png
+    - assets/images/go-build-run-local.png
+    - assets/images/go-install-systemwide.png
+    - assets/images/github-go-ethereum-list.png
+    - assets/images/which-geth-list.png
+    - assets/images/geth-help-1.png
+    - assets/images/geth-help-2.png
+    - assets/images/geth-help-3.png
+    - assets/images/geth-help-4.png
+    - assets/images/geth-help-5.png
+    - assets/images/geth-help-6.png
+    - assets/images/geth-syncmode-begin.png
+    - assets/images/geth-blockchain-p2p.png
+    - assets/images/ethsync-complete-closed.png
+    - assets/images/blockchain-size.png
+    # - assets/images/images/go-download-website.png
+    # - assets/images/images/go-env.png
     # - assets\images\go-download-website.png
     # - images\footer-gopher.jpg
     # - images/go-env.png
-    
+    # - assets/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
