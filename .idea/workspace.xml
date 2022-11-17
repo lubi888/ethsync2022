@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9735ff2a-a29c-4142-8ccf-29a5c513c833" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ethsync_scrollbar3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ethsync_scrollbar3.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ethsync_text.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ethsync_text.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ethsync_urllinks.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ethsync_urllinks.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ethsync_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ethsync_home.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +15,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="27TSIP7odwR7HrebyG2AEuZlG1j" />
   <component name="ProjectView">
@@ -39,7 +45,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ethsync22" />
     <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -76,6 +82,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

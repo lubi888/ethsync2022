@@ -147,8 +147,7 @@ class EthSyncNavDrawer extends StatelessWidget {
               onTap: () async {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => const Scrollbar2()),
+                  MaterialPageRoute(builder: (context) => const Scrollbar2()),
                   // MaterialPageRoute(builder: (context) => GridListDemo()),
                 );
               }),
@@ -206,7 +205,7 @@ class EthSyncNavDrawer extends StatelessWidget {
                 'capture eth|etc addresss',
                 style: TextStyle(color: Colors.orangeAccent),
               ),
-              subtitle: const Text(
+              subtitle: const Text( 
                 'launch camera and take QR addresses',
                 style: TextStyle(
                     fontStyle: FontStyle.italic, color: Colors.blueAccent),
@@ -312,8 +311,7 @@ class EthSyncNavDrawer extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => const Scrollbar2()),
+                  MaterialPageRoute(builder: (context) => const Scrollbar2()),
                   // MaterialPageRoute(builder: (context) => EthSyncShare()),
                 );
               }),

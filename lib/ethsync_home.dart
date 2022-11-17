@@ -15,7 +15,7 @@ class EthSyncHome extends StatelessWidget {
 
     return TabBarView(children: [
       const Scrollbar0(),
-      Scrollbar1(),
+      const Scrollbar1(),
       const Scrollbar2(),
       const Scrollbar3(),
       const Scrollbar4(),
